@@ -1,10 +1,37 @@
 {
-  "status": "aguardando_validacao",
-  "consultado_em_utc": "2026-10-25T19:34:59.566827+00:00",
-  "fonte": "Tribunal Superior Eleitoral",
-  "url_configuracao": "https://resultados.tse.jus.br/oficial/comum/config/ele-c.json",
-  "mensagem": "Configuração oficial acessível; interpretação EA11/EA14/EA20 ainda pendente de validação.",
-  "dados": null,
+  "status": "sem_totalizacao",
+  "consultado_em_utc": "2026-10-25T19:47:48.073382+00:00",
+  "fonte": "TSE - EA11/EA20",
   "configuracao_acessivel": true,
-  "configuracao_tipo": "dict"
+  "dados": {
+    "eleicao": "6258",
+    "turno": 2,
+    "secoes_totalizadas": 0,
+    "secoes_total": 499248,
+    "votos_validos": 0,
+    "candidatos": [
+      {
+        "numero": "22",
+        "nome": "FLAVIO BOLSONARO",
+        "votos": 0,
+        "percentual": null
+      },
+      {
+        "numero": "13",
+        "nome": "LULA",
+        "votos": 0,
+        "percentual": null
+      }
+    ],
+    "diferenca_votos": 0,
+    "eleitorado_apto": 158745502,
+    "comparecimento": 0,
+    "abstencoes": 0,
+    "brancos": 0,
+    "nulos": 0,
+    "gerado_em_tse": "25/10/2026 16:46:00",
+    "idg": "3951063"
+  },
+  "mensagem": "Arquivo oficial validado. Totalização ainda não iniciada.",
+  "url_resultado": "https://resultados.tse.jus.br/oficial/ele2026/6258/dados/br/br-c0001-e006258-u.json"
 }

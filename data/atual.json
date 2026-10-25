@@ -1,1 +1,10 @@
-{"status":"aguardando_validacao","mensagem":"Aguardando primeira consulta à configuração oficial do TSE. Nenhum resultado foi inferido.","configuracao_acessivel":false,"consultado_em_utc":null,"dados":null}
+{
+  "status": "aguardando_validacao",
+  "consultado_em_utc": "2026-10-25T19:34:59.566827+00:00",
+  "fonte": "Tribunal Superior Eleitoral",
+  "url_configuracao": "https://resultados.tse.jus.br/oficial/comum/config/ele-c.json",
+  "mensagem": "Configuração oficial acessível; interpretação EA11/EA14/EA20 ainda pendente de validação.",
+  "dados": null,
+  "configuracao_acessivel": true,
+  "configuracao_tipo": "dict"
+}

@@ -22,7 +22,13 @@
 <section><h2>Comparação histórica — Brasil</h2><p class="notice warning">A parcial do segundo turno de 2026 não é diretamente equivalente a um resultado final. Compare os percentuais e totais considerando a quantidade de votos já apurados e as diferenças entre eleições.</p><p id="comparativos-status" class="muted">Carregando referências...</p><div class="controls"><button id="csv-comparativo" type="button">Exportar comparação nacional (CSV)</button></div><div class="table-wrap"><table><thead><tr><th>Eleição</th><th>Situação</th><th>Votos válidos</th><th>Comparecimento</th><th>Abstenções</th><th>Brancos</th><th>Nulos</th></tr></thead><tbody id="comparativo-nacional"></tbody></table></div><h3>Participação nos votos válidos — candidatos 13 e 22</h3><div class="chart-wrap"><svg id="grafico-comparativo" class="chart" viewBox="0 0 900 310" role="img" aria-label="Gráfico comparativo de percentuais dos candidatos 13 e 22"></svg></div><div class="table-wrap"><table><thead><tr><th>Eleição</th><th>Candidato</th><th>Votos</th><th>% válidos</th></tr></thead><tbody id="comparativo-candidatos"></tbody></table></div><p class="footnote">Os demais candidatos do primeiro turno de 2026 não aparecem no gráfico dos dois finalistas, mas são considerados no denominador de votos válidos. Comparações de percentuais não representam transferência individual de votos.</p></section>
 <section><h2>Primeiro × segundo turno de 2026 — UFs e regiões</h2><div class="controls"><label for="recorte">Recorte</label><select id="recorte"><option value="ufs">Estados (UFs)</option><option value="regioes">Regiões</option></select><label for="candidato-comp">Candidato</label><select id="candidato-comp"><option value="13">13</option><option value="22">22</option></select><button id="csv-recortes" type="button">Exportar comparação (CSV)</button></div><p class="muted small">Variação em pontos percentuais (p.p.) = percentual no segundo turno parcial − percentual no primeiro turno. Recortes ausentes não são tratados como zero.</p><p id="recorte-status" class="muted">Aguardando dados...</p><div class="table-wrap"><table><thead><tr><th>Recorte</th><th>1º turno: votos</th><th>1º turno: %</th><th>2º turno parcial: votos</th><th>2º turno: %</th><th>Variação (p.p.)</th></tr></thead><tbody id="comparativo-recortes"></tbody></table></div></section>
 <section><h2>Histórico de totalizações</h2><p class="muted" id="historico">Consultando histórico...</p><div class="legend" id="legenda-votos"></div><h3>Evolução dos votos válidos por candidato</h3><div class="chart-wrap"><svg class="chart" id="grafico-votos" viewBox="0 0 900 290" role="img" aria-label="Gráfico de evolução dos votos por candidato"></svg></div><h3>Diferença absoluta de votos entre candidatos</h3><div class="chart-wrap"><svg class="chart" id="grafico-diferenca" viewBox="0 0 900 260" role="img" aria-label="Gráfico de evolução da diferença de votos"></svg></div><h3>Percentual de unidades totalizadas</h3><div class="chart-wrap"><svg class="chart" id="grafico-totalizacao" viewBox="0 0 900 260" role="img" aria-label="Gráfico de evolução de unidades totalizadas"></svg></div><button id="csv-historico" type="button">Exportar histórico (CSV)</button><p class="muted small">Os gráficos mostram apenas parciais efetivamente registradas pelo coletor, não uma reconstrução retroativa da apuração. Não constituem previsão eleitoral. O gráfico de unidades mostra quantidades absolutas, pois o histórico não registra necessariamente o denominador de cada parcial.</p></section>
-<section id="evolucao-parciais"><h2>Evolução das parciais e cenários finais</h2>
+<section id="previsao-uf"><h2>Projeção automática por UF — cenários exploratórios</h2>
+<p>Estimativa automática baseada nas 27 UFs, evolução estadual coletada e referência de comparecimento do primeiro turno. <strong>As frequências dos cenários não são probabilidades estatísticas validadas.</strong></p>
+<div class="cards"><div class="card">Situação do modelo<div class="big" id="pu-status">Aguardando</div></div><div class="card">UFs com dados<div class="big" id="pu-ufs">—</div></div><div class="card">Votos restantes estimados<div class="big" id="pu-rest">—</div></div><div class="card">Simulações<div class="big" id="pu-sims">—</div></div></div>
+<div class="cards"><div class="card">Total final estimado — 13<div class="big" id="pu-13">—</div></div><div class="card">Total final estimado — 22<div class="big" id="pu-22">—</div></div><div class="card">Diferença mediana (13 − 22)<div class="big" id="pu-diff">—</div></div><div class="card">Frequência de virada nos cenários<div class="big" id="pu-virada">—</div></div></div>
+<p id="pu-freq">Aguardando arquivo de projeção.</p><p id="pu-faixas"></p><p id="pu-aviso" class="muted small">O cálculo só será exibido quando o coletor produzir dados suficientes.</p>
+<h3>Diagnóstico por estado</h3><div class="table-wrap"><table><thead><tr><th>UF</th><th>Apuração</th><th>Restantes estimados</th><th>13 observado</th><th>13 projetado</th><th>Registros estaduais</th></tr></thead><tbody id="pu-tabela"></tbody></table></div>
+</section><section id="evolucao-parciais"><h2>Evolução das parciais e cenários finais</h2>
 <p class="notice warning">Análise descritiva dos registros efetivamente coletados. A distribuição dos votos restantes é desconhecida: os cenários abaixo não são previsões de vencedor nem probabilidades de vitória.</p>
 <div class="cards"><div class="card">Parciais registradas<div class="big" id="ep-contagem">—</div></div><div class="card">Último intervalo: novos votos válidos<div class="big" id="ep-novos">—</div></div><div class="card">Último intervalo: participação do 13<div class="big" id="ep-13">—</div></div><div class="card">Último intervalo: participação do 22<div class="big" id="ep-22">—</div></div></div>
 <h3>Participação acumulada por parcial</h3><div class="chart-wrap"><svg class="chart" id="ep-grafico" viewBox="0 0 900 300" role="img" aria-label="Evolução percentual acumulada dos candidatos 13 e 22"></svg></div>
@@ -182,6 +188,29 @@ renderComparativos=function(){epComparativoOriginal();epCenario()};
 for(const id of ['ep-escala','ep-manual'])$(id).addEventListener('input',epCenario);
 $('ep-cenario').addEventListener('change',epCenario);
 $('ep-csv').addEventListener('click',()=>baixarCsv('evolucao_intervalos_2026.csv',[['parcial_tse','novos_validos','novos_13','novos_22','pct_13_intervalo','pct_22_intervalo','diferenca_acumulada_13_menos_22'],...epLinhas]));
+
+
+async function carregarProjecao(){
+ try{
+  const r=await fetch('data/projecao.json?t='+Date.now(),{cache:'no-store'});
+  if(!r.ok)throw Error('Ainda não publicado');
+  const p=await r.json();set('pu-status',p.status||'—');set('pu-ufs',fmt(p.uf_utilizadas)+' / 27');
+  set('pu-rest',Number.isFinite(p.votos_restantes_estimados)?fmt(p.votos_restantes_estimados):'—');
+  set('pu-sims',Number.isFinite(p.simulacoes)?fmt(p.simulacoes):'—');
+  set('pu-13',Number.isFinite(p.total_final_13)?fmt(p.total_final_13):'—');
+  set('pu-22',Number.isFinite(p.total_final_22)?fmt(p.total_final_22):'—');
+  set('pu-diff',Number.isFinite(p.diferenca_mediana_13_menos_22)?fmt(p.diferenca_mediana_13_menos_22):'—');
+  set('pu-virada',Number.isFinite(p.frequencia_cenarios_virada_pct)?pct(p.frequencia_cenarios_virada_pct):'—');
+  set('pu-freq',p.status==='exploratorio'?'Entre os cenários simulados: 13 termina à frente em '+pct(p.frequencia_cenarios_13_pct)+' e 22 em '+pct(p.frequencia_cenarios_22_pct)+'. Estas NÃO são probabilidades validadas.':'Sem estimativa probabilística: '+(p.motivo||p.status));
+  set('pu-faixas',Array.isArray(p.faixa_cenarios_diferenca)?'Faixa central dos cenários para a diferença (13 − 22): '+fmt(p.faixa_cenarios_diferenca[0])+' a '+fmt(p.faixa_cenarios_diferenca[1])+' votos. Não é intervalo de confiança calibrado.':'');
+  set('pu-aviso',(p.aviso||'')+' '+(p.observacao_faixas||'')+' Última geração: '+(p.gerado_em_tse||'não informada'));
+  const b=$('pu-tabela');b.replaceChildren();
+  for(const x of p.ufs||[])linha(b,[x.uf,pct(x.apuracao_pct),fmt(x.votos_restantes_estimados),pct(x.participacao_13_observada),pct(x.participacao_13_projetada),fmt(x.intervalos_estaduais_disponiveis)]);
+  if(!p.ufs?.length)vazio(b,6,'Aguardando dados estaduais');
+ }catch(e){set('pu-status','Não publicado');set('pu-aviso','A projeção estará disponível após a primeira execução do coletor atualizado.');}
+}
+const atualizarProjecaoOriginal=atualizar;
+atualizar=async function(){await atualizarProjecaoOriginal();await carregarProjecao()};
 
 atualizar();setInterval(atualizar,60000);
 </script>

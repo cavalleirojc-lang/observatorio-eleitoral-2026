@@ -1,6 +1,6 @@
 {
   "status": "parcial_validada",
-  "consultado_em_utc": "2026-10-25T21:27:59.385746+00:00",
+  "consultado_em_utc": "2026-10-25T21:38:05.228004+00:00",
   "fonte": "TSE - EA11/EA20",
   "configuracao_acessivel": true,
   "dados": {
@@ -351,6 +351,31 @@
           "22": 0
         }
       }
+    },
+    "auditoria": {
+      "ufs_consultadas": 27,
+      "ufs_validadas": 27,
+      "ufs_pendentes": [],
+      "erros_uf": {},
+      "soma_ufs": {
+        "secoes_totalizadas": 214,
+        "votos_validos": 42647,
+        "candidatos": {
+          "13": 27875,
+          "22": 14772
+        }
+      },
+      "diferenca_nacional_menos_ufs": {
+        "secoes_totalizadas": 1011,
+        "votos_validos": 293096,
+        "candidatos": {
+          "13": 165699,
+          "22": 127397
+        }
+      },
+      "comparacao_completa": true,
+      "totais_coincidem": false,
+      "observacao": "Arquivos nacionais e estaduais podem ter horários de geração distintos; diferenças não comprovam erro de totalização."
     }
   },
   "mensagem": "Resultado nacional oficial disponível (EA20).",

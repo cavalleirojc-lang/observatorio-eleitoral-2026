@@ -15,6 +15,8 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'data'
 OUT = DATA / 'atual.json'
 HIST = DATA / 'historico.json'
+HIST_UF = DATA / 'historico_ufs.json'
+PROJECAO = DATA / 'projecao.json'
 CONFIG = 'https://resultados.tse.jus.br/oficial/comum/config/ele-c.json'
 BASE = 'https://resultados.tse.jus.br/oficial'
 UFS = 'ac al ap am ba ce df es go ma mt ms mg pa pb pr pe pi rj rn rs ro rr sc sp se to'.split()
@@ -138,6 +140,141 @@ def atualizar_historico(dados, agora):
     hist.append(registro)
     salvar_json(HIST, hist[-1000:])
     return True
+
+
+def atualizar_historico_ufs(dados, agora):
+    """Registra somente mudanças estaduais; preserva amostras antigas e rejeita regressões."""
+    historico = json.loads(HIST_UF.read_text(encoding='utf-8')) if HIST_UF.exists() else []
+    if not isinstance(historico, list):
+        raise ValueError('Histórico estadual inválido')
+    anterior_por_uf = {}
+    for registro in historico:
+        if not isinstance(registro, dict):
+            raise ValueError('Registro estadual inválido')
+        for uf, v in registro.get('ufs', {}).items():
+            anterior_por_uf[uf] = v
+    novos = {}
+    for uf, atual in dados.get('por_uf', {}).items():
+        anterior = anterior_por_uf.get(uf)
+        if anterior and (atual['secoes_totalizadas'] < anterior['secoes_totalizadas'] or
+                         atual['votos_validos'] < anterior['votos_validos']):
+            continue
+        if not anterior or any(atual[k] != anterior.get(k) for k in
+                               ('secoes_totalizadas', 'votos_validos', 'candidatos')):
+            novos[uf] = atual
+    if not novos:
+        return False
+    historico.append({'consultado_em_utc': agora,
+                      'gerado_em_tse_nacional': dados['gerado_em_tse'],
+                      'ufs': novos})
+    salvar_json(HIST_UF, historico[-1200:])
+    return True
+
+
+def projetar(dados, comparativos):
+    """Cenários exploratórios por UF. Sem calibração retrospectiva: NÃO publicar probabilidade validada."""
+    import random
+    import statistics
+    primeiro = comparativos.get('primeiro_turno_2026_por_uf', {})
+    atuais = dados.get('por_uf', {})
+    try:
+        historico = json.loads(HIST_UF.read_text(encoding='utf-8')) if HIST_UF.exists() else []
+    except (OSError, ValueError):
+        historico = []
+    anteriores = {}
+    for r in historico:
+        for uf, valor in r.get('ufs', {}).items():
+            anteriores.setdefault(uf, []).append(valor)
+    linhas = []
+    for uf in UFS:
+        u = atuais.get(uf.upper())
+        p = primeiro.get(uf.upper())
+        if not u or not p or not u.get('secoes_total') or not p.get('votos_validos'):
+            continue
+        total, apuradas = u['secoes_total'], u['secoes_totalizadas']
+        if not 0 <= apuradas <= total:
+            continue
+        a = u['candidatos'].get('13', 0)
+        b = u['candidatos'].get('22', 0)
+        vv = a + b
+        frac = apuradas / total
+        if vv == 0 and frac > 0:
+            continue
+        # A estimativa de votos restantes usa a escala estadual do primeiro turno.
+        # A densidade por seção já apurada recebe peso crescente com o progresso.
+        ref_restante = max(0.0, p['votos_validos'] * (1-frac))
+        por_secao = vv / apuradas if apuradas else 0
+        estimativa_local = max(0.0, por_secao * (total-apuradas))
+        peso_local = min(0.8, frac) if apuradas else 0
+        restante = (1-peso_local)*ref_restante + peso_local*estimativa_local
+        restante = min(restante, p['votos_validos']*1.5)
+        base = a/vv if vv else .5
+        ultimo = None
+        for ant in reversed(anteriores.get(uf.upper(), [])[:-1]):
+            aa = ant.get('candidatos', {}).get('13')
+            bb = ant.get('candidatos', {}).get('22')
+            if isinstance(aa, int) and isinstance(bb, int):
+                da, db = a-aa, b-bb
+                if da >= 0 and db >= 0 and da+db >= max(100, vv*.002):
+                    ultimo = da/(da+db)
+                    break
+        # Shrinkage da última parcial: variações recentes não devem dominar a projeção.
+        centro = .75*base + .25*ultimo if ultimo is not None else base
+        # Incerteza heurística: maior com pouca apuração e pouca história estadual.
+        sigma = .025 + .10*(1-frac)
+        linhas.append({'uf':uf.upper(), 'apuracao_pct':round(frac*100,2),
+                       'votos_restantes_estimados':round(restante),
+                       'participacao_13_observada':round(base*100,2),
+                       'participacao_13_projetada':round(centro*100,2),
+                       'intervalos_estaduais_disponiveis':len(anteriores.get(uf.upper(), [])),
+                       '_rest':restante,'_centro':centro,'_sigma':sigma})
+    base_resultado = {'metodo':'extrapolacao_uf_com_shrinkage_e_choques',
+                      'status':'insuficiente', 'uf_utilizadas':len(linhas),
+                      'aviso':('Frequências simuladas condicionais a hipóteses não calibradas. '
+                               'NÃO são probabilidades de vitória validadas nem previsão oficial.'),
+                      'validacao_retroativa':'pendente',
+                      'ufs':[{k:v for k,v in x.items() if not k.startswith('_')} for x in linhas]}
+    if len(linhas) != 27:
+        base_resultado['motivo']='Necessários dados atuais e referência do 1º turno para as 27 UFs.'
+        return base_resultado
+    a0 = next(c['votos'] for c in dados['candidatos'] if c['numero']=='13')
+    b0 = next(c['votos'] for c in dados['candidatos'] if c['numero']=='22')
+    if sum(x['votos_restantes_estimados'] for x in linhas) < 1:
+        base_resultado.update(status='concluido', vencedor_observado='13' if a0>b0 else '22' if b0>a0 else 'empate',
+                              total_final_13=a0,total_final_22=b0,
+                              votos_restantes_estimados=0)
+        return base_resultado
+    rng=random.Random(20261025)
+    amostras=[]
+    for _ in range(4000):
+        choque_nacional=rng.gauss(0,.035)
+        va,vb=float(a0),float(b0)
+        for x in linhas:
+            # Erro comum de participação, erro por UF e variação de comparecimento.
+            participacao=max(.01,min(.99,x['_centro']+choque_nacional+rng.gauss(0,x['_sigma'])))
+            rest=max(0,x['_rest']*(1+rng.gauss(0,.07)))
+            va+=rest*participacao
+            vb+=rest*(1-participacao)
+        amostras.append((va,vb))
+    sa=sorted(v[0] for v in amostras);sb=sorted(v[1] for v in amostras)
+    dif=sorted(v[0]-v[1] for v in amostras)
+    vencedor_atual='13' if a0>b0 else '22' if b0>a0 else 'empate'
+    base_resultado.update(
+        status='exploratorio', simulacoes=len(amostras),
+        votos_restantes_estimados=round(sum(x['_rest'] for x in linhas)),
+        total_final_13=round(statistics.median(sa)),
+        total_final_22=round(statistics.median(sb)),
+        diferenca_mediana_13_menos_22=round(statistics.median(dif)),
+        faixa_cenarios_13=[round(sa[100]),round(sa[-101])],
+        faixa_cenarios_22=[round(sb[100]),round(sb[-101])],
+        faixa_cenarios_diferenca=[round(dif[100]),round(dif[-101])],
+        frequencia_cenarios_13_pct=round(100*sum(v[0]>v[1] for v in amostras)/len(amostras),2),
+        frequencia_cenarios_22_pct=round(100*sum(v[1]>v[0] for v in amostras)/len(amostras),2),
+        frequencia_cenarios_virada_pct=round(100*sum((v[0]>v[1]) != (vencedor_atual=='13')
+                                            for v in amostras)/len(amostras),2)
+        if vencedor_atual!='empate' else None,
+        observacao_faixas='Intervalo central de 95% dos cenários simulados, NÃO intervalo de confiança calibrado.')
+    return base_resultado
 
 
 # Referência nacional de 2022, publicada pelo próprio TSE após a totalização.
@@ -396,6 +533,17 @@ def main():
             print('Histórico:', 'nova parcial registrada' if novo else 'sem nova parcial')
         except (OSError, ValueError, TypeError) as exc:
             print('Histórico não gravado:', type(exc).__name__, str(exc)[:160])
+        try:
+            if atualizar_historico_ufs(saida['dados'], agora):
+                print('Histórico estadual: novas parciais registradas')
+            comp=saida.get('comparativos', {})
+            resultado=projetar(saida['dados'],comp)
+            resultado['consultado_em_utc']=agora
+            resultado['gerado_em_tse']=saida['dados']['gerado_em_tse']
+            salvar_json(PROJECAO,resultado)
+            print('Projeção:',resultado['status'],'| UFs:',resultado['uf_utilizadas'])
+        except (OSError, ValueError, TypeError, KeyError) as exc:
+            print('Projeção não atualizada:',type(exc).__name__,str(exc)[:160])
 
 
 if __name__ == '__main__':

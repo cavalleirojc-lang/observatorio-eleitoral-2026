@@ -1,6 +1,6 @@
 {
   "status": "sem_totalizacao",
-  "consultado_em_utc": "2026-10-25T19:47:48.073382+00:00",
+  "consultado_em_utc": "2026-10-25T19:58:42.426870+00:00",
   "fonte": "TSE - EA11/EA20",
   "configuracao_acessivel": true,
   "dados": {
@@ -30,7 +30,328 @@
     "brancos": 0,
     "nulos": 0,
     "gerado_em_tse": "25/10/2026 16:46:00",
-    "idg": "3951063"
+    "idg": "3951063",
+    "por_uf": {
+      "AC": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 2270,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "13/10/2026 17:42:47"
+      },
+      "AL": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 7101,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "13/10/2026 17:42:57"
+      },
+      "AP": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 1914,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "13/10/2026 17:43:17"
+      },
+      "AM": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 8157,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "13/10/2026 17:43:07"
+      },
+      "BA": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 35476,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "13/10/2026 17:43:27"
+      },
+      "CE": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 23765,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "13/10/2026 17:36:57"
+      },
+      "DF": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 6969,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "09/10/2026 17:30:52"
+      },
+      "ES": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 9844,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "13/10/2026 17:45:07"
+      },
+      "GO": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 15686,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "13/10/2026 17:37:37"
+      },
+      "MA": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 18093,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "13/10/2026 17:45:47"
+      },
+      "MT": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 8287,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "13/10/2026 17:47:07"
+      },
+      "MS": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 7106,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "13/10/2026 17:46:57"
+      },
+      "MG": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 52062,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "13/10/2026 17:46:47"
+      },
+      "PA": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 20827,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "13/10/2026 17:47:47"
+      },
+      "PB": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 10712,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "13/10/2026 17:48:07"
+      },
+      "PR": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 27142,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "13/10/2026 17:48:38"
+      },
+      "PE": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 21418,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "13/10/2026 17:48:17"
+      },
+      "PI": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 10225,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "13/10/2026 17:48:27"
+      },
+      "RJ": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 37675,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "13/10/2026 17:48:47"
+      },
+      "RN": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 8115,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "13/10/2026 17:48:57"
+      },
+      "RS": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 27547,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "13/10/2026 17:49:27"
+      },
+      "RO": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 4698,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "13/10/2026 17:49:07"
+      },
+      "RR": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 1519,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "13/10/2026 17:49:17"
+      },
+      "SC": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 17326,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "13/10/2026 17:49:37"
+      },
+      "SP": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 103656,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "13/10/2026 17:50:07"
+      },
+      "SE": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 5923,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "24/10/2026 19:32:12"
+      },
+      "TO": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 4384,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        },
+        "gerado_em_tse": "25/10/2026 15:40:09"
+      }
+    },
+    "ufs_validadas": 27,
+    "ufs_pendentes": [],
+    "regioes": {
+      "Norte": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 43769,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        }
+      },
+      "Nordeste": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 140828,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        }
+      },
+      "Centro-Oeste": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 38048,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        }
+      },
+      "Sudeste": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 203237,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        }
+      },
+      "Sul": {
+        "secoes_totalizadas": 0,
+        "secoes_total": 72015,
+        "votos_validos": 0,
+        "candidatos": {
+          "22": 0,
+          "13": 0
+        }
+      }
+    }
   },
   "mensagem": "Arquivo oficial validado. Totalização ainda não iniciada.",
   "url_resultado": "https://resultados.tse.jus.br/oficial/ele2026/6258/dados/br/br-c0001-e006258-u.json"

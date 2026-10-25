@@ -140,6 +140,113 @@ def atualizar_historico(dados, agora):
     return True
 
 
+# Referência nacional de 2022, publicada pelo próprio TSE após a totalização.
+# Não atribuir os votos do candidato 22 de 2022 ao candidato 22 de 2026:
+# o número da candidatura não é uma identidade histórica estável.
+REFERENCIA_2022 = {
+    'ano': 2022, 'turno': 2, 'abrangencia': 'BR',
+    'situacao': 'resultado_final_publicado_pelo_tse',
+    'votos_validos': 118552353,
+    'comparecimento': 124252796,
+    'abstencoes': 32200558,
+    'brancos': 1769678,
+    'nulos': 3930765,
+    'candidatos': [
+        {'numero': '13', 'nome': 'Luiz Inácio Lula da Silva', 'votos': 60345999},
+        {'numero': '22', 'nome': 'Jair Bolsonaro', 'votos': 58206354},
+    ],
+    'fonte': 'https://www.tse.jus.br/comunicacao/noticias/2022/Outubro/100-das-secoes-totalizadas-confira-como-ficou-o-quadro-eleitoral-apos-o-2o-turno/',
+    'nota': 'Referência nacional publicada pelo TSE; não contém recortes estaduais.',
+}
+
+
+def candidatos_primeiro_turno(doc):
+    """Lê todos os candidatos presidenciais, inclusive os de votação zero."""
+    cargos = [c for c in doc.get('carg', []) if str(c.get('cd')) == '1']
+    if len(cargos) != 1:
+        raise ValueError('Cargo presidencial do primeiro turno ausente ou duplicado')
+    resultado = []
+    for agr in cargos[0].get('agr', []):
+        for partido in agr.get('par', []):
+            for cand in partido.get('cand', []):
+                resultado.append({
+                    'numero': str(cand['n']),
+                    'nome': cand.get('nmu') or cand.get('nm') or str(cand['n']),
+                    'votos': inteiro(cand['vap']),
+                })
+    if not resultado or len({c['numero'] for c in resultado}) != len(resultado):
+        raise ValueError('Lista de candidatos do primeiro turno inválida')
+    return sorted(resultado, key=lambda c: c['votos'], reverse=True)
+
+
+def primeiro_turno_2026(abrangencia):
+    codigo = abrangencia.lower()
+    url = f'{BASE}/ele2026/6257/dados/{codigo}/{codigo}-c0001-e006257-u.json'
+    doc = fetch(url)
+    if (str(doc.get('ele')) != '6257' or str(doc.get('t')) != '1'
+            or str(doc.get('cdabr', '')).lower() != codigo):
+        raise ValueError(f'Identificação do primeiro turno incompatível: {codigo}')
+    candidatos = candidatos_primeiro_turno(doc)
+    validos = inteiro(doc['v']['vv'])
+    if sum(c['votos'] for c in candidatos) != validos:
+        raise ValueError(f'Votos válidos do primeiro turno inconsistentes: {codigo}')
+    secoes = inteiro(doc['s']['st'])
+    total = inteiro(doc['s']['ts'])
+    if secoes > total:
+        raise ValueError(f'Seções do primeiro turno inconsistentes: {codigo}')
+    return {
+        'ano': 2026, 'turno': 1, 'abrangencia': codigo.upper(),
+        'situacao': 'conforme_arquivo_oficial_consultado',
+        'secoes_totalizadas': secoes, 'secoes_total': total,
+        'votos_validos': validos, 'candidatos': candidatos,
+        'eleitorado_apto': inteiro(doc['e']['te']),
+        'comparecimento': inteiro(doc['e']['c']),
+        'abstencoes': inteiro(doc['e']['a']),
+        'brancos': inteiro(doc['v']['vb']), 'nulos': inteiro(doc['v']['vn']),
+        'gerado_em_tse': horario_tse(doc), 'fonte': url,
+    }
+
+
+def obter_comparativos():
+    """Comparativos são opcionais: uma falha histórica não derruba a apuração."""
+    comparativos = {
+        'referencia_2022_segundo_turno': REFERENCIA_2022,
+        'primeiro_turno_2026': None,
+        'primeiro_turno_2026_por_uf': {},
+        'primeiro_turno_2026_regioes': {},
+        'pendencias': [],
+        'observacao': ('Os dados de 2022 são nacionais. As comparações entre turnos '
+                       'devem identificar os candidatos por nome, não apenas por número. '
+                       'Uma parcial de 2026 não equivale a um resultado final.'),
+    }
+    try:
+        comparativos['primeiro_turno_2026'] = primeiro_turno_2026('br')
+    except Exception as exc:
+        comparativos['pendencias'].append('BR: ' + type(exc).__name__)
+    for uf in UFS:
+        try:
+            comparativos['primeiro_turno_2026_por_uf'][uf.upper()] = primeiro_turno_2026(uf)
+        except Exception as exc:
+            comparativos['pendencias'].append(uf.upper() + ': ' + type(exc).__name__)
+    for nome, siglas in REGIOES.items():
+        estados = siglas.upper().split()
+        if not all(uf in comparativos['primeiro_turno_2026_por_uf'] for uf in estados):
+            continue
+        fontes = [comparativos['primeiro_turno_2026_por_uf'][uf] for uf in estados]
+        numeros = sorted({c['numero'] for f in fontes for c in f['candidatos']})
+        comparativos['primeiro_turno_2026_regioes'][nome] = {
+            'votos_validos': sum(f['votos_validos'] for f in fontes),
+            'comparecimento': sum(f['comparecimento'] for f in fontes),
+            'abstencoes': sum(f['abstencoes'] for f in fontes),
+            'brancos': sum(f['brancos'] for f in fontes),
+            'nulos': sum(f['nulos'] for f in fontes),
+            'candidatos': {n: sum(next((c['votos'] for c in f['candidatos']
+                                       if c['numero'] == n), 0) for f in fontes)
+                           for n in numeros},
+        }
+    return comparativos
+
+
 def main():
     DATA.mkdir(parents=True, exist_ok=True)
     agora = datetime.now(timezone.utc).isoformat()
@@ -262,6 +369,26 @@ def main():
             )
             saida['mensagem'] += ' Mantida última parcial validada; pode estar desatualizada.'
         print('Consulta sem validação:', type(exc).__name__, str(exc)[:240])
+    # Referências históricas independentes da coleta atual.
+    # Preservar referências anteriores se a CDN estiver indisponível.
+    try:
+        comparativos = obter_comparativos()
+        if anterior and isinstance(anterior.get('comparativos'), dict):
+            anterior_comp = anterior['comparativos']
+            if comparativos['primeiro_turno_2026'] is None:
+                comparativos['primeiro_turno_2026'] = anterior_comp.get('primeiro_turno_2026')
+            for campo in ('primeiro_turno_2026_por_uf', 'primeiro_turno_2026_regioes'):
+                antigos = anterior_comp.get(campo, {})
+                if isinstance(antigos, dict):
+                    comparativos[campo] = {**antigos, **comparativos[campo]}
+        saida['comparativos'] = comparativos
+        print('Comparativos: 1º turno BR:', bool(comparativos['primeiro_turno_2026']),
+              '| UFs:', len(comparativos['primeiro_turno_2026_por_uf']),
+              '| pendências:', len(comparativos['pendencias']))
+    except Exception as exc:
+        print('Comparativos indisponíveis:', type(exc).__name__, str(exc)[:160])
+        if anterior and isinstance(anterior.get('comparativos'), dict):
+            saida['comparativos'] = anterior['comparativos']
     salvar_json(OUT, saida)
     if saida['status'] in ('sem_totalizacao', 'parcial_validada') and saida['dados'] is not None:
         try:

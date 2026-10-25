@@ -1,6 +1,6 @@
 {
   "status": "parcial_validada",
-  "consultado_em_utc": "2026-10-25T21:38:05.228004+00:00",
+  "consultado_em_utc": "2026-10-25T21:51:04.820130+00:00",
   "fonte": "TSE - EA11/EA20",
   "configuracao_acessivel": true,
   "dados": {
@@ -379,5 +379,2327 @@
     }
   },
   "mensagem": "Resultado nacional oficial disponível (EA20).",
-  "url_resultado": "https://resultados.tse.jus.br/oficial/ele2026/6258/dados/br/br-c0001-e006258-u.json"
+  "url_resultado": "https://resultados.tse.jus.br/oficial/ele2026/6258/dados/br/br-c0001-e006258-u.json",
+  "comparativos": {
+    "referencia_2022_segundo_turno": {
+      "ano": 2022,
+      "turno": 2,
+      "abrangencia": "BR",
+      "situacao": "resultado_final_publicado_pelo_tse",
+      "votos_validos": 118552353,
+      "comparecimento": 124252796,
+      "abstencoes": 32200558,
+      "brancos": 1769678,
+      "nulos": 3930765,
+      "candidatos": [
+        {
+          "numero": "13",
+          "nome": "Luiz Inácio Lula da Silva",
+          "votos": 60345999
+        },
+        {
+          "numero": "22",
+          "nome": "Jair Bolsonaro",
+          "votos": 58206354
+        }
+      ],
+      "fonte": "https://www.tse.jus.br/comunicacao/noticias/2022/Outubro/100-das-secoes-totalizadas-confira-como-ficou-o-quadro-eleitoral-apos-o-2o-turno/",
+      "nota": "Referência nacional publicada pelo TSE; não contém recortes estaduais."
+    },
+    "primeiro_turno_2026": {
+      "ano": 2026,
+      "turno": 1,
+      "abrangencia": "BR",
+      "situacao": "conforme_arquivo_oficial_consultado",
+      "secoes_totalizadas": 499248,
+      "secoes_total": 499248,
+      "votos_validos": 119300788,
+      "candidatos": [
+        {
+          "numero": "22",
+          "nome": "FLAVIO BOLSONARO",
+          "votos": 56104503
+        },
+        {
+          "numero": "13",
+          "nome": "LULA",
+          "votos": 53879538
+        },
+        {
+          "numero": "70",
+          "nome": "ESCRITOR AUGUSTO CURY",
+          "votos": 3448569
+        },
+        {
+          "numero": "14",
+          "nome": "RENAN SANTOS",
+          "votos": 2675887
+        },
+        {
+          "numero": "55",
+          "nome": "RONALDO CAIADO",
+          "votos": 2605148
+        },
+        {
+          "numero": "30",
+          "nome": "ZEMA",
+          "votos": 326488
+        },
+        {
+          "numero": "80",
+          "nome": "SAMARA",
+          "votos": 122911
+        },
+        {
+          "numero": "16",
+          "nome": "HERTZ DIAS",
+          "votos": 43103
+        },
+        {
+          "numero": "27",
+          "nome": "CLARIANA BARAO",
+          "votos": 40043
+        },
+        {
+          "numero": "21",
+          "nome": "EDMILSON COSTA",
+          "votos": 22693
+        },
+        {
+          "numero": "35",
+          "nome": "VETERINÁRIO WILSON GRASSI",
+          "votos": 16881
+        },
+        {
+          "numero": "29",
+          "nome": "RUI COSTA PIMENTA",
+          "votos": 15024
+        }
+      ],
+      "eleitorado_apto": 158745502,
+      "comparecimento": 125275835,
+      "abstencoes": 33469244,
+      "brancos": 2300798,
+      "nulos": 3669003,
+      "gerado_em_tse": "05/10/2026 12:51:47",
+      "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/br/br-c0001-e006257-u.json"
+    },
+    "primeiro_turno_2026_por_uf": {
+      "AC": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "AC",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 2270,
+        "secoes_total": 2270,
+        "votos_validos": 469066,
+        "candidatos": [
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 302807
+          },
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 134770
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 13523
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 8594
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 7980
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 573
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 314
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 215
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 140
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 71
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 40
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 39
+          }
+        ],
+        "eleitorado_apto": 613742,
+        "comparecimento": 488330,
+        "abstencoes": 125412,
+        "brancos": 5579,
+        "nulos": 13662,
+        "gerado_em_tse": "05/10/2026 12:51:40",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/ac/ac-c0001-e006257-u.json"
+      },
+      "AL": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "AL",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 7101,
+        "secoes_total": 7101,
+        "votos_validos": 1818856,
+        "candidatos": [
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 995459
+          },
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 735718
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 42427
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 26851
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 14198
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 1345
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 1168
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 636
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 431
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 267
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 246
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 110
+          }
+        ],
+        "eleitorado_apto": 2442126,
+        "comparecimento": 1938428,
+        "abstencoes": 503698,
+        "brancos": 33712,
+        "nulos": 85787,
+        "gerado_em_tse": "05/10/2026 12:51:41",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/al/al-c0001-e006257-u.json"
+      },
+      "AP": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "AP",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 1914,
+        "secoes_total": 1914,
+        "votos_validos": 464858,
+        "candidatos": [
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 212503
+          },
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 212278
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 19057
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 11342
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 8304
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 508
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 341
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 229
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 132
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 62
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 53
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 49
+          }
+        ],
+        "eleitorado_apto": 576988,
+        "comparecimento": 476562,
+        "abstencoes": 100426,
+        "brancos": 4415,
+        "nulos": 7272,
+        "gerado_em_tse": "05/10/2026 12:51:40",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/ap/ap-c0001-e006257-u.json"
+      },
+      "AM": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "AM",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 8157,
+        "secoes_total": 8157,
+        "votos_validos": 2170763,
+        "candidatos": [
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 1046996
+          },
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 976764
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 77531
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 35411
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 28310
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 1867
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 1781
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 929
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 457
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 291
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 265
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 161
+          }
+        ],
+        "eleitorado_apto": 2798611,
+        "comparecimento": 2234549,
+        "abstencoes": 564062,
+        "brancos": 24402,
+        "nulos": 39302,
+        "gerado_em_tse": "05/10/2026 12:51:41",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/am/am-c0001-e006257-u.json"
+      },
+      "BA": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "BA",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 35476,
+        "secoes_total": 35476,
+        "votos_validos": 8560291,
+        "candidatos": [
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 5664771
+          },
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 2442585
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 195451
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 122705
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 117518
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 6497
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 4649
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 1791
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 1676
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 1299
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 724
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 625
+          }
+        ],
+        "eleitorado_apto": 11312752,
+        "comparecimento": 9053601,
+        "abstencoes": 2259151,
+        "brancos": 154936,
+        "nulos": 338123,
+        "gerado_em_tse": "05/10/2026 12:51:55",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/ba/ba-c0001-e006257-u.json"
+      },
+      "CE": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "CE",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 23765,
+        "secoes_total": 23765,
+        "votos_validos": 5617814,
+        "candidatos": [
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 3555263
+          },
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 1756850
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 140524
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 107587
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 45604
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 4310
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 3352
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 1491
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 1071
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 783
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 498
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 481
+          }
+        ],
+        "eleitorado_apto": 6996545,
+        "comparecimento": 5910471,
+        "abstencoes": 1086074,
+        "brancos": 103295,
+        "nulos": 189185,
+        "gerado_em_tse": "05/10/2026 12:51:44",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/ce/ce-c0001-e006257-u.json"
+      },
+      "DF": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "DF",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 6969,
+        "secoes_total": 6969,
+        "votos_validos": 1772808,
+        "candidatos": [
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 909616
+          },
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 675627
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 85076
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 46714
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 45979
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 4915
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 2297
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 828
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 716
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 382
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 334
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 324
+          }
+        ],
+        "eleitorado_apto": 2258320,
+        "comparecimento": 1831396,
+        "abstencoes": 426924,
+        "brancos": 25362,
+        "nulos": 33169,
+        "gerado_em_tse": "05/10/2026 12:51:40",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/df/df-c0001-e006257-u.json"
+      },
+      "ES": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "ES",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 9844,
+        "secoes_total": 9844,
+        "votos_validos": 2251078,
+        "candidatos": [
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 1233194
+          },
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 850028
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 65121
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 53236
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 39097
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 5873
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 1973
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 974
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 638
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 388
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 311
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 245
+          }
+        ],
+        "eleitorado_apto": 2991650,
+        "comparecimento": 2352282,
+        "abstencoes": 639368,
+        "brancos": 43211,
+        "nulos": 57872,
+        "gerado_em_tse": "05/10/2026 12:51:41",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/es/es-c0001-e006257-u.json"
+      },
+      "GO": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "GO",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 15686,
+        "secoes_total": 15686,
+        "votos_validos": 3827823,
+        "candidatos": [
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 2051888
+          },
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 1188880
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 472041
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 54105
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 53849
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 2672
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 2087
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 668
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 559
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 468
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 346
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 260
+          }
+        ],
+        "eleitorado_apto": 5080590,
+        "comparecimento": 3971587,
+        "abstencoes": 1109003,
+        "brancos": 45643,
+        "nulos": 98014,
+        "gerado_em_tse": "05/10/2026 12:51:44",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/go/go-c0001-e006257-u.json"
+      },
+      "MA": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "MA",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 18093,
+        "secoes_total": 18093,
+        "votos_validos": 4010439,
+        "candidatos": [
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 2566301
+          },
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 1239040
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 84830
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 60387
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 50155
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 4584
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 1795
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 1459
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 895
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 475
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 307
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 211
+          }
+        ],
+        "eleitorado_apto": 5183115,
+        "comparecimento": 4160343,
+        "abstencoes": 1022772,
+        "brancos": 46315,
+        "nulos": 103244,
+        "gerado_em_tse": "05/10/2026 12:51:45",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/ma/ma-c0001-e006257-u.json"
+      },
+      "MT": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "MT",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 8287,
+        "secoes_total": 8287,
+        "votos_validos": 1993288,
+        "candidatos": [
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 1298581
+          },
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 581681
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 40019
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 33170
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 33079
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 2424
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 1869
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 1584
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 340
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 239
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 172
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 130
+          }
+        ],
+        "eleitorado_apto": 2637801,
+        "comparecimento": 2052133,
+        "abstencoes": 585668,
+        "brancos": 20756,
+        "nulos": 37994,
+        "gerado_em_tse": "05/10/2026 12:51:42",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/mt/mt-c0001-e006257-u.json"
+      },
+      "MS": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "MS",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 7106,
+        "secoes_total": 7106,
+        "votos_validos": 1490278,
+        "candidatos": [
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 873351
+          },
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 516855
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 39148
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 31847
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 23291
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 2792
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 1291
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 626
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 353
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 332
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 209
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 183
+          }
+        ],
+        "eleitorado_apto": 2024430,
+        "comparecimento": 1541220,
+        "abstencoes": 483210,
+        "brancos": 21270,
+        "nulos": 29596,
+        "gerado_em_tse": "05/10/2026 12:51:41",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/ms/ms-c0001-e006257-u.json"
+      },
+      "MG": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "MG",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 52062,
+        "secoes_total": 52062,
+        "votos_validos": 11976235,
+        "candidatos": [
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 5777548
+          },
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 5188936
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 409737
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 247209
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 230423
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 98407
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 11026
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 4085
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 3411
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 2300
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 1732
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 1421
+          }
+        ],
+        "eleitorado_apto": 16372372,
+        "comparecimento": 12637274,
+        "abstencoes": 3735098,
+        "brancos": 268302,
+        "nulos": 392176,
+        "gerado_em_tse": "05/10/2026 12:52:05",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/mg/mg-c0001-e006257-u.json"
+      },
+      "PA": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "PA",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 20827,
+        "secoes_total": 20827,
+        "votos_validos": 4863172,
+        "candidatos": [
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 2427237
+          },
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 2163957
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 125172
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 84165
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 51991
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 3824
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 3064
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 1293
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 1045
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 674
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 442
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 308
+          }
+        ],
+        "eleitorado_apto": 6262397,
+        "comparecimento": 5066504,
+        "abstencoes": 1195893,
+        "brancos": 54203,
+        "nulos": 148946,
+        "gerado_em_tse": "05/10/2026 12:51:45",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/pa/pa-c0001-e006257-u.json"
+      },
+      "PB": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "PB",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 10712,
+        "secoes_total": 10712,
+        "votos_validos": 2513747,
+        "candidatos": [
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 1541127
+          },
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 831377
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 73831
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 42247
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 19511
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 1988
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 1593
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 627
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 604
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 347
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 274
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 221
+          }
+        ],
+        "eleitorado_apto": 3248531,
+        "comparecimento": 2683988,
+        "abstencoes": 564543,
+        "brancos": 52297,
+        "nulos": 117854,
+        "gerado_em_tse": "05/10/2026 12:51:44",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/pb/pb-c0001-e006257-u.json"
+      },
+      "PR": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "PR",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 27142,
+        "secoes_total": 27142,
+        "votos_validos": 6585243,
+        "candidatos": [
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 3945345
+          },
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 2054597
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 205095
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 177434
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 171294
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 17172
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 6731
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 2445
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 2056
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 1195
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 962
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 917
+          }
+        ],
+        "eleitorado_apto": 8613657,
+        "comparecimento": 6841457,
+        "abstencoes": 1772200,
+        "brancos": 122499,
+        "nulos": 133447,
+        "gerado_em_tse": "05/10/2026 12:51:50",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/pr/pr-c0001-e006257-u.json"
+      },
+      "PE": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "PE",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 21418,
+        "secoes_total": 21418,
+        "votos_validos": 5601017,
+        "candidatos": [
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 3553971
+          },
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 1738043
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 137960
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 85865
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 73176
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 6060
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 2387
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 1114
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 869
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 705
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 457
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 410
+          }
+        ],
+        "eleitorado_apto": 7223450,
+        "comparecimento": 5911062,
+        "abstencoes": 1312388,
+        "brancos": 109491,
+        "nulos": 200416,
+        "gerado_em_tse": "05/10/2026 12:51:44",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/pe/pe-c0001-e006257-u.json"
+      },
+      "PI": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "PI",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 10225,
+        "secoes_total": 10225,
+        "votos_validos": 2146394,
+        "candidatos": [
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 1523710
+          },
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 517028
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 47692
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 32274
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 21629
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 1357
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 1099
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 504
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 443
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 319
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 193
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 146
+          }
+        ],
+        "eleitorado_apto": 2704758,
+        "comparecimento": 2240883,
+        "abstencoes": 463875,
+        "brancos": 28329,
+        "nulos": 66108,
+        "gerado_em_tse": "05/10/2026 12:51:46",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/pi/pi-c0001-e006257-u.json"
+      },
+      "RJ": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "RJ",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 37675,
+        "secoes_total": 37675,
+        "votos_validos": 9369700,
+        "candidatos": [
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 4966844
+          },
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 3693021
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 247397
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 211843
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 199844
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 21907
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 14186
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 4082
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 3999
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 2854
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 1930
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 1793
+          }
+        ],
+        "eleitorado_apto": 12857648,
+        "comparecimento": 9859802,
+        "abstencoes": 2997846,
+        "brancos": 201979,
+        "nulos": 287736,
+        "gerado_em_tse": "05/10/2026 12:51:43",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/rj/rj-c0001-e006257-u.json"
+      },
+      "RN": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "RN",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 8115,
+        "secoes_total": 8115,
+        "votos_validos": 2071898,
+        "candidatos": [
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 1237963
+          },
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 720493
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 57367
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 35261
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 16407
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 1525
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 1228
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 572
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 405
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 315
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 185
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 177
+          }
+        ],
+        "eleitorado_apto": 2659825,
+        "comparecimento": 2171013,
+        "abstencoes": 488812,
+        "brancos": 33172,
+        "nulos": 65880,
+        "gerado_em_tse": "05/10/2026 12:51:43",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/rn/rn-c0001-e006257-u.json"
+      },
+      "RS": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "RS",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 27547,
+        "secoes_total": 27547,
+        "votos_validos": 6423046,
+        "candidatos": [
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 3573783
+          },
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 2294759
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 195296
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 167558
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 158821
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 18988
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 6632
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 2146
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 2066
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 1043
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 1031
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 923
+          }
+        ],
+        "eleitorado_apto": 8522545,
+        "comparecimento": 6702903,
+        "abstencoes": 1819642,
+        "brancos": 148339,
+        "nulos": 131265,
+        "gerado_em_tse": "05/10/2026 12:51:50",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/rs/rs-c0001-e006257-u.json"
+      },
+      "RO": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "RO",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 4698,
+        "secoes_total": 4698,
+        "votos_validos": 968059,
+        "candidatos": [
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 652988
+          },
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 250667
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 25280
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 19187
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 16929
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 1318
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 843
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 356
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 174
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 160
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 97
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 60
+          }
+        ],
+        "eleitorado_apto": 1265893,
+        "comparecimento": 991080,
+        "abstencoes": 274813,
+        "brancos": 9846,
+        "nulos": 13109,
+        "gerado_em_tse": "05/10/2026 12:51:40",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/ro/ro-c0001-e006257-u.json"
+      },
+      "RR": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "RR",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 1519,
+        "secoes_total": 1519,
+        "votos_validos": 325545,
+        "candidatos": [
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 231322
+          },
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 74420
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 8579
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 6623
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 3639
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 337
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 280
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 168
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 60
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 42
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 41
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 34
+          }
+        ],
+        "eleitorado_apto": 401521,
+        "comparecimento": 332772,
+        "abstencoes": 68749,
+        "brancos": 2618,
+        "nulos": 4595,
+        "gerado_em_tse": "05/10/2026 12:51:40",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/rr/rr-c0001-e006257-u.json"
+      },
+      "SC": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "SC",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 17326,
+        "secoes_total": 17326,
+        "votos_validos": 4500897,
+        "candidatos": [
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 3000020
+          },
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 1127168
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 134273
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 132795
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 79911
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 16718
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 5049
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 1503
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 1429
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 828
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 643
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 560
+          }
+        ],
+        "eleitorado_apto": 5734651,
+        "comparecimento": 4648159,
+        "abstencoes": 1086492,
+        "brancos": 69007,
+        "nulos": 78071,
+        "gerado_em_tse": "05/10/2026 12:51:45",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/sc/sc-c0001-e006257-u.json"
+      },
+      "SP": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "SP",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 103656,
+        "secoes_total": 103656,
+        "votos_validos": 24882948,
+        "candidatos": [
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 12922023
+          },
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 9505413
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 892368
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 804310
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 579571
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 94635
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 42532
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 15815
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 10563
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 6129
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 5160
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 4429
+          }
+        ],
+        "eleitorado_apto": 34122892,
+        "comparecimento": 26431992,
+        "abstencoes": 7690900,
+        "brancos": 632801,
+        "nulos": 914888,
+        "gerado_em_tse": "05/10/2026 12:51:59",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/sp/sp-c0001-e006257-u.json"
+      },
+      "SE": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "SE",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 5923,
+        "secoes_total": 5923,
+        "votos_validos": 1364196,
+        "candidatos": [
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 856019
+          },
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 417839
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 38895
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 26651
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 21405
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 1158
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 991
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 457
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 331
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 204
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 138
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 108
+          }
+        ],
+        "eleitorado_apto": 1740135,
+        "comparecimento": 1439082,
+        "abstencoes": 301053,
+        "brancos": 24859,
+        "nulos": 49970,
+        "gerado_em_tse": "05/10/2026 12:51:41",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/se/se-c0001-e006257-u.json"
+      },
+      "TO": {
+        "ano": 2026,
+        "turno": 1,
+        "abrangencia": "TO",
+        "situacao": "conforme_arquivo_oficial_consultado",
+        "secoes_totalizadas": 4384,
+        "secoes_total": 4384,
+        "votos_validos": 930447,
+        "candidatos": [
+          {
+            "numero": "22",
+            "nome": "FLAVIO BOLSONARO",
+            "votos": 469321
+          },
+          {
+            "numero": "13",
+            "nome": "LULA",
+            "votos": 404009
+          },
+          {
+            "numero": "70",
+            "nome": "ESCRITOR AUGUSTO CURY",
+            "votos": 22434
+          },
+          {
+            "numero": "55",
+            "nome": "RONALDO CAIADO",
+            "votos": 20189
+          },
+          {
+            "numero": "14",
+            "nome": "RENAN SANTOS",
+            "votos": 12983
+          },
+          {
+            "numero": "30",
+            "nome": "ZEMA",
+            "votos": 595
+          },
+          {
+            "numero": "80",
+            "nome": "SAMARA",
+            "votos": 395
+          },
+          {
+            "numero": "27",
+            "nome": "CLARIANA BARAO",
+            "votos": 171
+          },
+          {
+            "numero": "21",
+            "nome": "EDMILSON COSTA",
+            "votos": 117
+          },
+          {
+            "numero": "16",
+            "nome": "HERTZ DIAS",
+            "votos": 101
+          },
+          {
+            "numero": "35",
+            "nome": "VETERINÁRIO WILSON GRASSI",
+            "votos": 67
+          },
+          {
+            "numero": "29",
+            "nome": "RUI COSTA PIMENTA",
+            "votos": 65
+          }
+        ],
+        "eleitorado_apto": 1182023,
+        "comparecimento": 965196,
+        "abstencoes": 216827,
+        "brancos": 8344,
+        "nulos": 26377,
+        "gerado_em_tse": "05/10/2026 12:51:42",
+        "fonte": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/to/to-c0001-e006257-u.json"
+      }
+    },
+    "primeiro_turno_2026_regioes": {
+      "Norte": {
+        "votos_validos": 10191910,
+        "comparecimento": 10554993,
+        "abstencoes": 2546182,
+        "brancos": 109407,
+        "nulos": 253263,
+        "candidatos": {
+          "13": 4550602,
+          "14": 177691,
+          "16": 2040,
+          "21": 1460,
+          "22": 5009437,
+          "27": 3361,
+          "29": 721,
+          "30": 8009,
+          "35": 1026,
+          "55": 137956,
+          "70": 291576,
+          "80": 8031
+        }
+      },
+      "Nordeste": {
+        "votos_validos": 33704652,
+        "comparecimento": 35508871,
+        "abstencoes": 8002366,
+        "brancos": 586406,
+        "nulos": 1216567,
+        "candidatos": {
+          "13": 21494584,
+          "14": 529395,
+          "16": 8259,
+          "21": 4714,
+          "22": 10398973,
+          "27": 7117,
+          "29": 2658,
+          "30": 28647,
+          "35": 2853,
+          "55": 390036,
+          "70": 818977,
+          "80": 18439
+        }
+      },
+      "Centro-Oeste": {
+        "votos_validos": 9084197,
+        "comparecimento": 9396336,
+        "abstencoes": 2604805,
+        "brancos": 113031,
+        "nulos": 198773,
+        "candidatos": {
+          "13": 2963043,
+          "14": 165836,
+          "16": 2189,
+          "21": 1373,
+          "22": 5133436,
+          "27": 3770,
+          "29": 955,
+          "30": 12803,
+          "35": 1051,
+          "55": 613487,
+          "70": 178995,
+          "80": 7259
+        }
+      },
+      "Sudeste": {
+        "votos_validos": 48479961,
+        "comparecimento": 51281350,
+        "abstencoes": 15063212,
+        "brancos": 1146293,
+        "nulos": 1652672,
+        "candidatos": {
+          "13": 19237398,
+          "14": 1316598,
+          "16": 24537,
+          "21": 11671,
+          "22": 24899609,
+          "27": 19030,
+          "29": 7888,
+          "30": 220822,
+          "35": 9133,
+          "55": 1048935,
+          "70": 1614623,
+          "80": 69717
+        }
+      },
+      "Sul": {
+        "votos_validos": 17509186,
+        "comparecimento": 18192519,
+        "abstencoes": 4678334,
+        "brancos": 339845,
+        "nulos": 342783,
+        "candidatos": {
+          "13": 5476524,
+          "14": 477787,
+          "16": 5705,
+          "21": 3054,
+          "22": 10519148,
+          "27": 5940,
+          "29": 2603,
+          "30": 52878,
+          "35": 2445,
+          "55": 410026,
+          "70": 534664,
+          "80": 18412
+        }
+      }
+    },
+    "pendencias": [],
+    "observacao": "Os dados de 2022 são nacionais. As comparações entre turnos devem identificar os candidatos por nome, não apenas por número. Uma parcial de 2026 não equivale a um resultado final."
+  }
 }

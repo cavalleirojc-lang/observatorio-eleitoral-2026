@@ -1,5 +1,5 @@
 """Consulta EA11/EA20 presidencial 2026, com validações conservadoras."""
-import json, urllib.request, urllib.error
+import json, urllib.request, urllib.error, os
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -7,6 +7,9 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'data' / 'atual.json'
 CONFIG = 'https://resultados.tse.jus.br/oficial/comum/config/ele-c.json'
 BASE = 'https://resultados.tse.jus.br/oficial'
+UFS = 'ac al ap am ba ce df es go ma mt ms mg pa pb pr pe pi rj rn rs ro rr sc sp se to'.split()
+REGIOES = {'Norte':'ac ap am pa ro rr to','Nordeste':'al ba ce ma pb pe pi rn se','Centro-Oeste':'df go mt ms','Sudeste':'es mg rj sp','Sul':'pr rs sc'}
+HIST = ROOT / 'data' / 'historico.json'
 
 def fetch(url):
     req = urllib.request.Request(url, headers={'User-Agent':'ObservatorioEleitoral2026/2.0', 'Accept':'application/json'})
@@ -61,6 +64,43 @@ def main():
                'comparecimento':inteiro(e['c']), 'abstencoes':inteiro(e['a']),
                'brancos':inteiro(v['vb']), 'nulos':inteiro(v['vn']),
                'gerado_em_tse':f"{doc.get('dg','')} {doc.get('hg','')}", 'idg':str(doc.get('idg',''))}
+        # EA20 por UF: publicar somente registros individualmente validados.
+        por_uf = {}
+        erros_uf = {}
+        for uf in UFS:
+            try:
+                # Endpoint oficial por abrangência UF; ausência não vira zero.
+                du = fetch(f'{BASE}/ele2026/6258/dados/{uf}/{uf}-c0001-e006258-u.json')
+                if str(du.get('ele')) != '6258' or str(du.get('t')) != '2' or str(du.get('cdabr')).lower() != uf:
+                    raise ValueError('identificação de UF/eleição incompatível')
+                cargo = [c for c in du.get('carg', []) if str(c.get('cd')) == '1']
+                if len(cargo) != 1: raise ValueError('cargo inválido')
+                votos_uf = {}
+                for ag in cargo[0].get('agr', []):
+                    for par in ag.get('par', []):
+                        for cand in par.get('cand', []):
+                            numero = str(cand['n'])
+                            if numero in votos_uf: raise ValueError('candidato repetido')
+                            votos_uf[numero] = inteiro(cand['vap'])
+                if set(votos_uf) != {c['numero'] for c in candidatos}: raise ValueError('candidatos inconsistentes')
+                su, vu = du.get('s', {}), du.get('v', {})
+                ts, st, vv = inteiro(su['ts']), inteiro(su['st']), inteiro(vu['vv'])
+                if not 0 <= st <= ts or sum(votos_uf.values()) != vv: raise ValueError('totalizações inconsistentes')
+                por_uf[uf.upper()] = {'secoes_totalizadas':st,'secoes_total':ts,'votos_validos':vv,
+                                     'candidatos':votos_uf, 'gerado_em_tse':f"{du.get('dg','')} {du.get('hg','')}"}
+            except Exception as exc:
+                erros_uf[uf.upper()] = type(exc).__name__
+        dados['por_uf'] = por_uf
+        dados['ufs_validadas'] = len(por_uf)
+        dados['ufs_pendentes'] = sorted(erros_uf)
+        dados['regioes'] = {}
+        for nome, siglas in REGIOES.items():
+            estados = siglas.upper().split()
+            if all(uf in por_uf for uf in estados):
+                dados['regioes'][nome] = {'secoes_totalizadas':sum(por_uf[u]['secoes_totalizadas'] for u in estados),
+                    'secoes_total':sum(por_uf[u]['secoes_total'] for u in estados),
+                    'votos_validos':sum(por_uf[u]['votos_validos'] for u in estados),
+                    'candidatos':{c['numero']:sum(por_uf[u]['candidatos'][c['numero']] for u in estados) for c in candidatos}}
         saida['dados']=dados
         saida['status']='sem_totalizacao' if secoes==0 else 'parcial_validada'
         saida['mensagem']='Arquivo oficial validado. Totalização ainda não iniciada.' if secoes==0 else 'Resultado nacional oficial disponível (EA20).'
@@ -72,5 +112,20 @@ def main():
         print('Consulta sem validação:', type(exc).__name__, str(exc)[:240])
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(saida,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    # Histórico só de totalizações nacionais validadas, sem duplicar parcial.
+    if saida['dados'] is not None:
+        try:
+            hist = json.loads(HIST.read_text(encoding='utf-8')) if HIST.exists() else []
+            if not isinstance(hist, list): hist = []
+            d = saida['dados']
+            registro = {'consultado_em_utc':agora,'gerado_em_tse':d['gerado_em_tse'],
+                        'secoes_totalizadas':d['secoes_totalizadas'], 'votos_validos':d['votos_validos'],
+                        'candidatos':{c['numero']:c['votos'] for c in d['candidatos']}}
+            chave = (registro['gerado_em_tse'],registro['secoes_totalizadas'],registro['votos_validos'],registro['candidatos'])
+            if not hist or (hist[-1].get('gerado_em_tse'),hist[-1].get('secoes_totalizadas'),hist[-1].get('votos_validos'),hist[-1].get('candidatos')) != chave:
+                hist.append(registro)
+                HIST.write_text(json.dumps(hist[-1000:],ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+        except (OSError, ValueError, TypeError) as exc:
+            print('Histórico não gravado:',type(exc).__name__)
 
 if __name__=='__main__': main()

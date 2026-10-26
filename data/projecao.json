@@ -31,11 +31,11 @@
     },
     {
       "uf": "AM",
-      "apuracao_pct": 99.99,
-      "votos_restantes_estimados": 261,
+      "apuracao_pct": 100.0,
+      "votos_restantes_estimados": 0,
       "participacao_13_observada": 54.02,
-      "participacao_13_projetada": 56.44,
-      "intervalos_estaduais_disponiveis": 4
+      "participacao_13_projetada": 56.48,
+      "intervalos_estaduais_disponiveis": 5
     },
     {
       "uf": "BA",
@@ -104,10 +104,10 @@
     {
       "uf": "MG",
       "apuracao_pct": 100.0,
-      "votos_restantes_estimados": 240,
+      "votos_restantes_estimados": 0,
       "participacao_13_observada": 50.43,
-      "participacao_13_projetada": 54.3,
-      "intervalos_estaduais_disponiveis": 5
+      "participacao_13_projetada": 54.32,
+      "intervalos_estaduais_disponiveis": 6
     },
     {
       "uf": "PA",
@@ -223,26 +223,26 @@
     }
   ],
   "simulacoes": 4000,
-  "votos_restantes_estimados": 754,
-  "total_final_13": 64256347,
-  "total_final_22": 59826281,
-  "diferenca_mediana_13_menos_22": 4430066,
+  "votos_restantes_estimados": 253,
+  "total_final_13": 64256411,
+  "total_final_22": 59826114,
+  "diferenca_mediana_13_menos_22": 4430297,
   "faixa_cenarios_13": [
-    64256285,
-    64256416
+    64256379,
+    64256446
   ],
   "faixa_cenarios_22": [
-    59826222,
-    59826345
+    59826091,
+    59826139
   ],
   "faixa_cenarios_diferenca": [
-    4429956,
-    4430182
+    4430254,
+    4430346
   ],
   "frequencia_cenarios_13_pct": 100.0,
   "frequencia_cenarios_22_pct": 0.0,
   "frequencia_cenarios_virada_pct": 0.0,
   "observacao_faixas": "Intervalo central de 95% dos cenários simulados, NÃO intervalo de confiança calibrado.",
-  "consultado_em_utc": "2026-10-26T01:48:44.710219+00:00",
-  "gerado_em_tse": "25/10/2026 22:46:03"
+  "consultado_em_utc": "2026-10-26T02:23:01.892054+00:00",
+  "gerado_em_tse": "25/10/2026 23:22:22"
 }

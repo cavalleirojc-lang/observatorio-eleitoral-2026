@@ -1028,5 +1028,31 @@
         "gerado_em_tse": "25/10/2026 22:45:59"
       }
     }
+  },
+  {
+    "consultado_em_utc": "2026-10-26T02:23:01.892054+00:00",
+    "gerado_em_tse_nacional": "25/10/2026 23:22:22",
+    "ufs": {
+      "AM": {
+        "secoes_totalizadas": 8157,
+        "secoes_total": 8157,
+        "votos_validos": 2121028,
+        "candidatos": {
+          "22": 975245,
+          "13": 1145783
+        },
+        "gerado_em_tse": "25/10/2026 23:22:17"
+      },
+      "MG": {
+        "secoes_totalizadas": 52062,
+        "secoes_total": 52062,
+        "votos_validos": 12592885,
+        "candidatos": {
+          "22": 6241786,
+          "13": 6351099
+        },
+        "gerado_em_tse": "25/10/2026 23:09:26"
+      }
+    }
   }
 ]

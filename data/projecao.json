@@ -15,83 +15,83 @@
     },
     {
       "uf": "AL",
-      "apuracao_pct": 98.82,
-      "votos_restantes_estimados": 22239,
-      "participacao_13_observada": 60.85,
-      "participacao_13_projetada": 60.85,
-      "intervalos_estaduais_disponiveis": 1
+      "apuracao_pct": 99.82,
+      "votos_restantes_estimados": 3444,
+      "participacao_13_observada": 60.76,
+      "participacao_13_projetada": 58.64,
+      "intervalos_estaduais_disponiveis": 2
     },
     {
       "uf": "AP",
-      "apuracao_pct": 99.63,
-      "votos_restantes_estimados": 1574,
-      "participacao_13_observada": 52.85,
-      "participacao_13_projetada": 52.85,
-      "intervalos_estaduais_disponiveis": 1
+      "apuracao_pct": 99.84,
+      "votos_restantes_estimados": 674,
+      "participacao_13_observada": 52.88,
+      "participacao_13_projetada": 52.88,
+      "intervalos_estaduais_disponiveis": 2
     },
     {
       "uf": "AM",
-      "apuracao_pct": 96.37,
-      "votos_restantes_estimados": 77740,
-      "participacao_13_observada": 53.69,
-      "participacao_13_projetada": 53.69,
-      "intervalos_estaduais_disponiveis": 1
+      "apuracao_pct": 98.2,
+      "votos_restantes_estimados": 38510,
+      "participacao_13_observada": 53.87,
+      "participacao_13_projetada": 56.72,
+      "intervalos_estaduais_disponiveis": 2
     },
     {
       "uf": "BA",
-      "apuracao_pct": 76.32,
-      "votos_restantes_estimados": 2098288,
-      "participacao_13_observada": 71.18,
-      "participacao_13_projetada": 71.18,
-      "intervalos_estaduais_disponiveis": 1
+      "apuracao_pct": 90.58,
+      "votos_restantes_estimados": 841316,
+      "participacao_13_observada": 71.24,
+      "participacao_13_projetada": 71.32,
+      "intervalos_estaduais_disponiveis": 2
     },
     {
       "uf": "CE",
-      "apuracao_pct": 88.45,
-      "votos_restantes_estimados": 675094,
-      "participacao_13_observada": 68.49,
-      "participacao_13_projetada": 68.49,
-      "intervalos_estaduais_disponiveis": 1
+      "apuracao_pct": 97.02,
+      "votos_restantes_estimados": 173241,
+      "participacao_13_observada": 68.83,
+      "participacao_13_projetada": 69.77,
+      "intervalos_estaduais_disponiveis": 2
     },
     {
       "uf": "DF",
-      "apuracao_pct": 97.88,
-      "votos_restantes_estimados": 38237,
-      "participacao_13_observada": 45.7,
-      "participacao_13_projetada": 45.7,
-      "intervalos_estaduais_disponiveis": 1
+      "apuracao_pct": 98.29,
+      "votos_restantes_estimados": 30731,
+      "participacao_13_observada": 45.72,
+      "participacao_13_projetada": 46.83,
+      "intervalos_estaduais_disponiveis": 2
     },
     {
       "uf": "ES",
-      "apuracao_pct": 97.36,
-      "votos_restantes_estimados": 60363,
-      "participacao_13_observada": 43.86,
-      "participacao_13_projetada": 43.86,
-      "intervalos_estaduais_disponiveis": 1
+      "apuracao_pct": 97.77,
+      "votos_restantes_estimados": 51054,
+      "participacao_13_observada": 43.85,
+      "participacao_13_projetada": 43.09,
+      "intervalos_estaduais_disponiveis": 2
     },
     {
       "uf": "GO",
-      "apuracao_pct": 96.44,
-      "votos_restantes_estimados": 139129,
-      "participacao_13_observada": 40.17,
-      "participacao_13_projetada": 40.17,
-      "intervalos_estaduais_disponiveis": 1
+      "apuracao_pct": 98.76,
+      "votos_restantes_estimados": 48386,
+      "participacao_13_observada": 40.33,
+      "participacao_13_projetada": 41.98,
+      "intervalos_estaduais_disponiveis": 2
     },
     {
       "uf": "MA",
-      "apuracao_pct": 97.13,
-      "votos_restantes_estimados": 115948,
-      "participacao_13_observada": 69.31,
-      "participacao_13_projetada": 69.31,
-      "intervalos_estaduais_disponiveis": 1
+      "apuracao_pct": 99.0,
+      "votos_restantes_estimados": 40357,
+      "participacao_13_observada": 69.49,
+      "participacao_13_projetada": 72.27,
+      "intervalos_estaduais_disponiveis": 2
     },
     {
       "uf": "MT",
-      "apuracao_pct": 95.79,
-      "votos_restantes_estimados": 85869,
-      "participacao_13_observada": 33.81,
-      "participacao_13_projetada": 33.81,
-      "intervalos_estaduais_disponiveis": 1
+      "apuracao_pct": 97.83,
+      "votos_restantes_estimados": 44233,
+      "participacao_13_observada": 33.99,
+      "participacao_13_projetada": 36.19,
+      "intervalos_estaduais_disponiveis": 2
     },
     {
       "uf": "MS",
@@ -103,83 +103,83 @@
     },
     {
       "uf": "MG",
-      "apuracao_pct": 84.04,
-      "votos_restantes_estimados": 2006196,
-      "participacao_13_observada": 50.26,
-      "participacao_13_projetada": 50.26,
-      "intervalos_estaduais_disponiveis": 1
+      "apuracao_pct": 94.07,
+      "votos_restantes_estimados": 743119,
+      "participacao_13_observada": 50.25,
+      "participacao_13_projetada": 50.23,
+      "intervalos_estaduais_disponiveis": 2
     },
     {
       "uf": "PA",
-      "apuracao_pct": 94.5,
-      "votos_restantes_estimados": 269729,
-      "participacao_13_observada": 54.68,
-      "participacao_13_projetada": 54.68,
-      "intervalos_estaduais_disponiveis": 1
+      "apuracao_pct": 98.19,
+      "votos_restantes_estimados": 88529,
+      "participacao_13_observada": 54.83,
+      "participacao_13_projetada": 55.9,
+      "intervalos_estaduais_disponiveis": 2
     },
     {
       "uf": "PB",
-      "apuracao_pct": 96.42,
-      "votos_restantes_estimados": 93618,
-      "participacao_13_observada": 67.99,
-      "participacao_13_projetada": 67.99,
-      "intervalos_estaduais_disponiveis": 1
+      "apuracao_pct": 99.41,
+      "votos_restantes_estimados": 15465,
+      "participacao_13_observada": 67.48,
+      "participacao_13_projetada": 64.03,
+      "intervalos_estaduais_disponiveis": 2
     },
     {
       "uf": "PR",
-      "apuracao_pct": 98.96,
-      "votos_restantes_estimados": 70451,
+      "apuracao_pct": 99.1,
+      "votos_restantes_estimados": 61417,
       "participacao_13_observada": 37.4,
       "participacao_13_projetada": 37.4,
-      "intervalos_estaduais_disponiveis": 1
+      "intervalos_estaduais_disponiveis": 2
     },
     {
       "uf": "PE",
-      "apuracao_pct": 89.57,
-      "votos_restantes_estimados": 611057,
-      "participacao_13_observada": 69.52,
-      "participacao_13_projetada": 69.52,
-      "intervalos_estaduais_disponiveis": 1
+      "apuracao_pct": 96.05,
+      "votos_restantes_estimados": 231529,
+      "participacao_13_observada": 69.4,
+      "participacao_13_projetada": 69.0,
+      "intervalos_estaduais_disponiveis": 2
     },
     {
       "uf": "PI",
-      "apuracao_pct": 93.79,
-      "votos_restantes_estimados": 135337,
-      "participacao_13_observada": 75.69,
-      "participacao_13_projetada": 75.69,
-      "intervalos_estaduais_disponiveis": 1
+      "apuracao_pct": 98.66,
+      "votos_restantes_estimados": 29136,
+      "participacao_13_observada": 75.82,
+      "participacao_13_projetada": 76.46,
+      "intervalos_estaduais_disponiveis": 2
     },
     {
       "uf": "RJ",
-      "apuracao_pct": 42.1,
-      "votos_restantes_estimados": 5457345,
-      "participacao_13_observada": 46.63,
-      "participacao_13_projetada": 46.63,
-      "intervalos_estaduais_disponiveis": 1
+      "apuracao_pct": 68.43,
+      "votos_restantes_estimados": 2987606,
+      "participacao_13_observada": 46.35,
+      "participacao_13_projetada": 46.24,
+      "intervalos_estaduais_disponiveis": 2
     },
     {
       "uf": "RN",
-      "apuracao_pct": 97.22,
-      "votos_restantes_estimados": 59488,
-      "participacao_13_observada": 65.79,
-      "participacao_13_projetada": 65.79,
-      "intervalos_estaduais_disponiveis": 1
+      "apuracao_pct": 98.39,
+      "votos_restantes_estimados": 34502,
+      "participacao_13_observada": 65.69,
+      "participacao_13_projetada": 63.64,
+      "intervalos_estaduais_disponiveis": 2
     },
     {
       "uf": "RS",
-      "apuracao_pct": 94.68,
-      "votos_restantes_estimados": 354308,
-      "participacao_13_observada": 42.31,
-      "participacao_13_projetada": 42.31,
-      "intervalos_estaduais_disponiveis": 1
+      "apuracao_pct": 99.1,
+      "votos_restantes_estimados": 59615,
+      "participacao_13_observada": 42.2,
+      "participacao_13_projetada": 41.57,
+      "intervalos_estaduais_disponiveis": 2
     },
     {
       "uf": "RO",
-      "apuracao_pct": 96.98,
-      "votos_restantes_estimados": 29307,
-      "participacao_13_observada": 30.46,
-      "participacao_13_projetada": 30.46,
-      "intervalos_estaduais_disponiveis": 1
+      "apuracao_pct": 98.66,
+      "votos_restantes_estimados": 13008,
+      "participacao_13_observada": 30.38,
+      "participacao_13_projetada": 29.37,
+      "intervalos_estaduais_disponiveis": 2
     },
     {
       "uf": "RR",
@@ -191,58 +191,58 @@
     },
     {
       "uf": "SC",
-      "apuracao_pct": 98.4,
-      "votos_restantes_estimados": 73960,
-      "participacao_13_observada": 30.59,
-      "participacao_13_projetada": 30.59,
-      "intervalos_estaduais_disponiveis": 1
+      "apuracao_pct": 99.86,
+      "votos_restantes_estimados": 6388,
+      "participacao_13_observada": 30.57,
+      "participacao_13_projetada": 30.36,
+      "intervalos_estaduais_disponiveis": 2
     },
     {
       "uf": "SP",
-      "apuracao_pct": 78.98,
-      "votos_restantes_estimados": 5438463,
-      "participacao_13_observada": 45.24,
-      "participacao_13_projetada": 45.24,
-      "intervalos_estaduais_disponiveis": 1
+      "apuracao_pct": 90.67,
+      "votos_restantes_estimados": 2419931,
+      "participacao_13_observada": 45.68,
+      "participacao_13_projetada": 46.42,
+      "intervalos_estaduais_disponiveis": 2
     },
     {
       "uf": "SE",
-      "apuracao_pct": 52.41,
-      "votos_restantes_estimados": 670726,
-      "participacao_13_observada": 69.17,
-      "participacao_13_projetada": 69.17,
-      "intervalos_estaduais_disponiveis": 1
+      "apuracao_pct": 89.28,
+      "votos_restantes_estimados": 151612,
+      "participacao_13_observada": 69.11,
+      "participacao_13_projetada": 69.08,
+      "intervalos_estaduais_disponiveis": 2
     },
     {
       "uf": "TO",
-      "apuracao_pct": 98.18,
-      "votos_restantes_estimados": 16699,
-      "participacao_13_observada": 48.58,
-      "participacao_13_projetada": 48.58,
-      "intervalos_estaduais_disponiveis": 1
+      "apuracao_pct": 98.22,
+      "votos_restantes_estimados": 16280,
+      "participacao_13_observada": 48.6,
+      "participacao_13_projetada": 48.6,
+      "intervalos_estaduais_disponiveis": 2
     }
   ],
   "simulacoes": 4000,
-  "votos_restantes_estimados": 18611702,
-  "total_final_13": 63871008,
-  "total_final_22": 60094847,
-  "diferenca_mediana_13_menos_22": 3784254,
+  "votos_restantes_estimados": 8140622,
+  "total_final_13": 63703759,
+  "total_final_22": 59686117,
+  "diferenca_mediana_13_menos_22": 4016691,
   "faixa_cenarios_13": [
-    62176324,
-    65673928
+    63006174,
+    64450549
   ],
   "faixa_cenarios_22": [
-    58326461,
-    61873860
+    58948976,
+    60420021
   ],
   "faixa_cenarios_diferenca": [
-    452453,
-    7225764
+    2662464,
+    5420138
   ],
-  "frequencia_cenarios_13_pct": 98.88,
-  "frequencia_cenarios_22_pct": 1.12,
-  "frequencia_cenarios_virada_pct": 1.12,
+  "frequencia_cenarios_13_pct": 100.0,
+  "frequencia_cenarios_22_pct": 0.0,
+  "frequencia_cenarios_virada_pct": 0.0,
   "observacao_faixas": "Intervalo central de 95% dos cenários simulados, NÃO intervalo de confiança calibrado.",
-  "consultado_em_utc": "2026-10-25T23:58:02.102570+00:00",
-  "gerado_em_tse": "25/10/2026 20:57:31"
+  "consultado_em_utc": "2026-10-26T00:05:42.335256+00:00",
+  "gerado_em_tse": "25/10/2026 21:04:52"
 }

@@ -1,36 +1,36 @@
 {
   "status": "parcial_validada",
-  "consultado_em_utc": "2026-10-25T23:58:02.102570+00:00",
+  "consultado_em_utc": "2026-10-26T00:05:42.335256+00:00",
   "fonte": "TSE - EA11/EA20",
   "configuracao_acessivel": true,
   "dados": {
     "eleicao": "6258",
     "turno": 2,
-    "secoes_totalizadas": 425575,
+    "secoes_totalizadas": 465067,
     "secoes_total": 499248,
-    "votos_validos": 105382888,
+    "votos_validos": 115256621,
     "candidatos": [
       {
         "numero": "13",
         "nome": "LULA",
-        "votos": 54199648,
-        "percentual": 51.43
+        "votos": 59556789,
+        "percentual": 51.67
       },
       {
         "numero": "22",
         "nome": "FLAVIO BOLSONARO",
-        "votos": 51183240,
-        "percentual": 48.57
+        "votos": 55699832,
+        "percentual": 48.33
       }
     ],
-    "diferenca_votos": 3016408,
+    "diferenca_votos": 3856957,
     "eleitorado_apto": 158745502,
-    "comparecimento": 108857694,
-    "abstencoes": 25544204,
-    "brancos": 1204630,
-    "nulos": 2270176,
-    "gerado_em_tse": "25/10/2026 20:57:31",
-    "idg": "4130623",
+    "comparecimento": 119086628,
+    "abstencoes": 28046421,
+    "brancos": 1324805,
+    "nulos": 2505202,
+    "gerado_em_tse": "25/10/2026 21:04:52",
+    "idg": "4139682",
     "por_uf": {
       "AC": {
         "secoes_totalizadas": 2249,
@@ -40,107 +40,107 @@
           "22": 284735,
           "13": 143426
         },
-        "gerado_em_tse": "25/10/2026 20:56:56"
+        "gerado_em_tse": "25/10/2026 21:05:15"
       },
       "AL": {
-        "secoes_totalizadas": 7017,
+        "secoes_totalizadas": 7088,
         "secoes_total": 7101,
-        "votos_validos": 1872805,
+        "votos_validos": 1893384,
         "candidatos": {
-          "22": 733153,
-          "13": 1139652
+          "22": 742972,
+          "13": 1150412
         },
-        "gerado_em_tse": "25/10/2026 20:56:56"
+        "gerado_em_tse": "25/10/2026 21:05:16"
       },
       "AP": {
-        "secoes_totalizadas": 1907,
+        "secoes_totalizadas": 1911,
         "secoes_total": 1914,
-        "votos_validos": 420084,
+        "votos_validos": 420871,
         "candidatos": {
-          "22": 198068,
-          "13": 222016
+          "22": 198303,
+          "13": 222568
         },
-        "gerado_em_tse": "25/10/2026 20:56:55"
+        "gerado_em_tse": "25/10/2026 21:05:15"
       },
       "AM": {
-        "secoes_totalizadas": 7861,
+        "secoes_totalizadas": 8010,
         "secoes_total": 8157,
-        "votos_validos": 2057731,
+        "votos_validos": 2090088,
         "candidatos": {
-          "22": 953024,
-          "13": 1104707
+          "22": 964261,
+          "13": 1125827
         },
-        "gerado_em_tse": "25/10/2026 20:56:56"
+        "gerado_em_tse": "25/10/2026 21:05:16"
       },
       "BA": {
-        "secoes_totalizadas": 27075,
+        "secoes_totalizadas": 32134,
         "secoes_total": 35476,
-        "votos_validos": 6833570,
+        "votos_validos": 8173315,
         "candidatos": {
-          "22": 1969527,
-          "13": 4864043
+          "22": 2350489,
+          "13": 5822826
         },
-        "gerado_em_tse": "25/10/2026 20:57:01"
+        "gerado_em_tse": "25/10/2026 21:04:53"
       },
       "CE": {
-        "secoes_totalizadas": 21021,
+        "secoes_totalizadas": 23057,
         "secoes_total": 23765,
-        "votos_validos": 5222341,
+        "votos_validos": 5689675,
         "candidatos": {
-          "22": 1645452,
-          "13": 3576889
+          "22": 1773529,
+          "13": 3916146
         },
-        "gerado_em_tse": "25/10/2026 20:57:27"
+        "gerado_em_tse": "25/10/2026 21:05:17"
       },
       "DF": {
-        "secoes_totalizadas": 6821,
+        "secoes_totalizadas": 6850,
         "secoes_total": 6969,
-        "votos_validos": 1769022,
+        "votos_validos": 1775564,
         "candidatos": {
-          "22": 960529,
-          "13": 808493
+          "22": 963790,
+          "13": 811774
         },
-        "gerado_em_tse": "25/10/2026 20:56:56"
+        "gerado_em_tse": "25/10/2026 21:05:15"
       },
       "ES": {
-        "secoes_totalizadas": 9584,
+        "secoes_totalizadas": 9624,
         "secoes_total": 9844,
-        "votos_validos": 2233430,
+        "votos_validos": 2241530,
         "candidatos": {
-          "22": 1253882,
-          "13": 979548
+          "22": 1258676,
+          "13": 982854
         },
-        "gerado_em_tse": "25/10/2026 20:57:27"
+        "gerado_em_tse": "25/10/2026 21:05:17"
       },
       "GO": {
-        "secoes_totalizadas": 15128,
+        "secoes_totalizadas": 15492,
         "secoes_total": 15686,
-        "votos_validos": 3792000,
+        "votos_validos": 3884736,
         "candidatos": {
-          "22": 2268637,
-          "13": 1523363
+          "22": 2317858,
+          "13": 1566878
         },
-        "gerado_em_tse": "25/10/2026 20:57:27"
+        "gerado_em_tse": "25/10/2026 21:04:48"
       },
       "MA": {
-        "secoes_totalizadas": 17574,
+        "secoes_totalizadas": 17912,
         "secoes_total": 18093,
-        "votos_validos": 3933827,
+        "votos_validos": 3999608,
         "candidatos": {
-          "22": 1207353,
-          "13": 2726474
+          "22": 1220108,
+          "13": 2779500
         },
-        "gerado_em_tse": "25/10/2026 20:57:28"
+        "gerado_em_tse": "25/10/2026 21:04:48"
       },
       "MT": {
-        "secoes_totalizadas": 7938,
+        "secoes_totalizadas": 8107,
         "secoes_total": 8287,
-        "votos_validos": 1964040,
+        "votos_validos": 2002741,
         "candidatos": {
-          "22": 1299955,
-          "13": 664085
+          "22": 1322095,
+          "13": 680646
         },
-        "gerado_em_tse": "25/10/2026 20:56:56"
+        "gerado_em_tse": "25/10/2026 21:05:16"
       },
       "MS": {
         "secoes_totalizadas": 7079,
@@ -150,107 +150,107 @@
           "22": 924265,
           "13": 626752
         },
-        "gerado_em_tse": "25/10/2026 20:56:26"
+        "gerado_em_tse": "25/10/2026 21:04:46"
       },
       "MG": {
-        "secoes_totalizadas": 43755,
+        "secoes_totalizadas": 48976,
         "secoes_total": 52062,
-        "votos_validos": 10692579,
+        "votos_validos": 11925399,
         "candidatos": {
-          "22": 5318931,
-          "13": 5373648
+          "22": 5933130,
+          "13": 5992269
         },
-        "gerado_em_tse": "25/10/2026 20:57:04"
+        "gerado_em_tse": "25/10/2026 21:04:24"
       },
       "PA": {
-        "secoes_totalizadas": 19682,
+        "secoes_totalizadas": 20450,
         "secoes_total": 20827,
-        "votos_validos": 4646692,
+        "votos_validos": 4808912,
         "candidatos": {
-          "22": 2106049,
-          "13": 2540643
+          "22": 2172361,
+          "13": 2636551
         },
-        "gerado_em_tse": "25/10/2026 20:57:29"
+        "gerado_em_tse": "25/10/2026 21:04:48"
       },
       "PB": {
-        "secoes_totalizadas": 10329,
+        "secoes_totalizadas": 10649,
         "secoes_total": 10712,
-        "votos_validos": 2549971,
+        "votos_validos": 2642820,
         "candidatos": {
-          "22": 816302,
-          "13": 1733669
+          "22": 859315,
+          "13": 1783505
         },
-        "gerado_em_tse": "25/10/2026 20:56:57"
+        "gerado_em_tse": "25/10/2026 21:04:47"
       },
       "PR": {
-        "secoes_totalizadas": 26861,
+        "secoes_totalizadas": 26897,
         "secoes_total": 27142,
-        "votos_validos": 6788782,
+        "votos_validos": 6796770,
         "candidatos": {
-          "22": 4250102,
-          "13": 2538680
+          "22": 4254780,
+          "13": 2541990
         },
-        "gerado_em_tse": "25/10/2026 20:57:03"
+        "gerado_em_tse": "25/10/2026 21:04:53"
       },
       "PE": {
-        "secoes_totalizadas": 19185,
+        "secoes_totalizadas": 20573,
         "secoes_total": 21418,
-        "votos_validos": 5308167,
+        "votos_validos": 5701216,
         "candidatos": {
-          "22": 1618099,
-          "13": 3690068
+          "22": 1744626,
+          "13": 3956590
         },
-        "gerado_em_tse": "25/10/2026 20:56:57"
+        "gerado_em_tse": "25/10/2026 21:04:48"
       },
       "PI": {
-        "secoes_totalizadas": 9590,
+        "secoes_totalizadas": 10088,
         "secoes_total": 10225,
-        "votos_validos": 2051606,
+        "votos_validos": 2152406,
         "candidatos": {
-          "22": 498769,
-          "13": 1552837
+          "22": 520551,
+          "13": 1631855
         },
-        "gerado_em_tse": "25/10/2026 20:57:28"
+        "gerado_em_tse": "25/10/2026 21:04:48"
       },
       "RJ": {
-        "secoes_totalizadas": 15860,
+        "secoes_totalizadas": 25781,
         "secoes_total": 37675,
-        "votos_validos": 3999610,
+        "votos_validos": 6505416,
         "candidatos": {
-          "22": 2134459,
-          "13": 1865151
+          "22": 3489861,
+          "13": 3015555
         },
-        "gerado_em_tse": "25/10/2026 20:57:26"
+        "gerado_em_tse": "25/10/2026 21:05:17"
       },
       "RN": {
-        "secoes_totalizadas": 7889,
+        "secoes_totalizadas": 7984,
         "secoes_total": 8115,
-        "votos_validos": 2092151,
+        "votos_validos": 2118857,
         "candidatos": {
-          "22": 715631,
-          "13": 1376520
+          "22": 726988,
+          "13": 1391869
         },
-        "gerado_em_tse": "25/10/2026 20:56:56"
+        "gerado_em_tse": "25/10/2026 21:05:17"
       },
       "RS": {
-        "secoes_totalizadas": 26082,
+        "secoes_totalizadas": 27300,
         "secoes_total": 27547,
-        "votos_validos": 6364491,
+        "votos_validos": 6644986,
         "candidatos": {
-          "22": 3671587,
-          "13": 2692904
+          "22": 3840758,
+          "13": 2804228
         },
-        "gerado_em_tse": "25/10/2026 20:57:36"
+        "gerado_em_tse": "25/10/2026 21:04:55"
       },
       "RO": {
-        "secoes_totalizadas": 4556,
+        "secoes_totalizadas": 4635,
         "secoes_total": 4698,
-        "votos_validos": 940666,
+        "votos_validos": 957519,
         "candidatos": {
-          "22": 654166,
-          "13": 286500
+          "22": 666584,
+          "13": 290935
         },
-        "gerado_em_tse": "25/10/2026 20:56:56"
+        "gerado_em_tse": "25/10/2026 21:05:15"
       },
       "RR": {
         "secoes_totalizadas": 1516,
@@ -263,92 +263,92 @@
         "gerado_em_tse": "25/10/2026 20:56:55"
       },
       "SC": {
-        "secoes_totalizadas": 17048,
+        "secoes_totalizadas": 17302,
         "secoes_total": 17326,
-        "votos_validos": 4562210,
+        "votos_validos": 4632798,
         "candidatos": {
-          "22": 3166820,
-          "13": 1395390
+          "22": 3216438,
+          "13": 1416360
         },
-        "gerado_em_tse": "25/10/2026 20:57:00"
+        "gerado_em_tse": "25/10/2026 21:05:19"
       },
       "SP": {
-        "secoes_totalizadas": 81869,
+        "secoes_totalizadas": 93989,
         "secoes_total": 103656,
-        "votos_validos": 20644533,
+        "votos_validos": 23769632,
         "candidatos": {
-          "22": 11305572,
-          "13": 9338961
+          "22": 12910525,
+          "13": 10859107
         },
-        "gerado_em_tse": "25/10/2026 20:57:05"
+        "gerado_em_tse": "25/10/2026 21:04:57"
       },
       "SE": {
-        "secoes_totalizadas": 3104,
+        "secoes_totalizadas": 5288,
         "secoes_total": 5923,
-        "votos_validos": 759986,
+        "votos_validos": 1273713,
         "candidatos": {
-          "22": 234278,
-          "13": 525708
+          "22": 393509,
+          "13": 880204
         },
-        "gerado_em_tse": "25/10/2026 20:56:55"
+        "gerado_em_tse": "25/10/2026 21:05:16"
       },
       "TO": {
-        "secoes_totalizadas": 4304,
+        "secoes_totalizadas": 4306,
         "secoes_total": 4384,
-        "votos_validos": 894621,
+        "votos_validos": 894942,
         "candidatos": {
-          "22": 460034,
-          "13": 434587
+          "22": 460041,
+          "13": 434901
         },
-        "gerado_em_tse": "25/10/2026 20:56:57"
+        "gerado_em_tse": "25/10/2026 21:05:16"
       }
     },
     "ufs_validadas": 27,
     "ufs_pendentes": [],
     "regioes": {
       "Norte": {
-        "secoes_totalizadas": 42075,
+        "secoes_totalizadas": 43077,
         "secoes_total": 43769,
-        "votos_validos": 9690487,
+        "votos_validos": 9903025,
         "candidatos": {
-          "13": 4815213,
-          "22": 4875274
+          "13": 4937542,
+          "22": 4965483
         }
       },
       "Nordeste": {
-        "secoes_totalizadas": 122784,
+        "secoes_totalizadas": 134773,
         "secoes_total": 140828,
-        "votos_validos": 30624424,
+        "votos_validos": 33644994,
         "candidatos": {
-          "13": 21185860,
-          "22": 9438564
+          "13": 23312907,
+          "22": 10332087
         }
       },
       "Centro-Oeste": {
-        "secoes_totalizadas": 36966,
+        "secoes_totalizadas": 37528,
         "secoes_total": 38048,
-        "votos_validos": 9076079,
+        "votos_validos": 9214058,
         "candidatos": {
-          "13": 3622693,
-          "22": 5453386
+          "13": 3686050,
+          "22": 5528008
         }
       },
       "Sudeste": {
-        "secoes_totalizadas": 151068,
+        "secoes_totalizadas": 178370,
         "secoes_total": 203237,
-        "votos_validos": 37570152,
+        "votos_validos": 44441977,
         "candidatos": {
-          "13": 17557308,
-          "22": 20012844
+          "13": 20849785,
+          "22": 23592192
         }
       },
       "Sul": {
-        "secoes_totalizadas": 69991,
+        "secoes_totalizadas": 71499,
         "secoes_total": 72015,
-        "votos_validos": 17715483,
+        "votos_validos": 18074554,
         "candidatos": {
-          "13": 6626974,
-          "22": 11088509
+          "13": 6762578,
+          "22": 11311976
         }
       }
     },
@@ -358,19 +358,19 @@
       "ufs_pendentes": [],
       "erros_uf": {},
       "soma_ufs": {
-        "secoes_totalizadas": 422884,
-        "votos_validos": 104676625,
+        "secoes_totalizadas": 465247,
+        "votos_validos": 115278608,
         "candidatos": {
-          "13": 53808048,
-          "22": 50868577
+          "13": 59548862,
+          "22": 55729746
         }
       },
       "diferenca_nacional_menos_ufs": {
-        "secoes_totalizadas": 2691,
-        "votos_validos": 706263,
+        "secoes_totalizadas": -180,
+        "votos_validos": -21987,
         "candidatos": {
-          "13": 391600,
-          "22": 314663
+          "13": 7927,
+          "22": -29914
         }
       },
       "comparacao_completa": true,

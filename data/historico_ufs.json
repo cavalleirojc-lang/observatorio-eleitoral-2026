@@ -982,5 +982,51 @@
         "gerado_em_tse": "25/10/2026 22:01:17"
       }
     }
+  },
+  {
+    "consultado_em_utc": "2026-10-26T01:48:44.710219+00:00",
+    "gerado_em_tse_nacional": "25/10/2026 22:46:03",
+    "ufs": {
+      "MA": {
+        "secoes_totalizadas": 18093,
+        "secoes_total": 18093,
+        "votos_validos": 4038202,
+        "candidatos": {
+          "22": 1229971,
+          "13": 2808231
+        },
+        "gerado_em_tse": "25/10/2026 22:45:59"
+      },
+      "MG": {
+        "secoes_totalizadas": 52061,
+        "secoes_total": 52062,
+        "votos_validos": 12592789,
+        "candidatos": {
+          "22": 6241768,
+          "13": 6351021
+        },
+        "gerado_em_tse": "25/10/2026 22:46:05"
+      },
+      "PA": {
+        "secoes_totalizadas": 20827,
+        "secoes_total": 20827,
+        "votos_validos": 4890389,
+        "candidatos": {
+          "22": 2199940,
+          "13": 2690449
+        },
+        "gerado_em_tse": "25/10/2026 22:45:59"
+      },
+      "RJ": {
+        "secoes_totalizadas": 37675,
+        "secoes_total": 37675,
+        "votos_validos": 9734426,
+        "candidatos": {
+          "22": 5169033,
+          "13": 4565393
+        },
+        "gerado_em_tse": "25/10/2026 22:45:59"
+      }
+    }
   }
 ]

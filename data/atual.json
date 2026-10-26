@@ -1,6 +1,6 @@
 {
   "status": "parcial_validada",
-  "consultado_em_utc": "2026-10-26T06:17:35.123234+00:00",
+  "consultado_em_utc": "2026-10-26T07:19:39.188294+00:00",
   "fonte": "TSE - EA11/EA20",
   "configuracao_acessivel": true,
   "dados": {
@@ -260,7 +260,7 @@
           "22": 219675,
           "13": 83505
         },
-        "gerado_em_tse": "25/10/2026 22:45:56"
+        "gerado_em_tse": "25/10/2026 23:26:57"
       },
       "SC": {
         "secoes_totalizadas": 17326,

@@ -1,6 +1,6 @@
 {
   "metodo": "extrapolacao_uf_com_shrinkage_e_choques",
-  "status": "exploratorio",
+  "status": "concluido",
   "uf_utilizadas": 27,
   "aviso": "Frequências simuladas condicionais a hipóteses não calibradas. NÃO são probabilidades de vitória validadas nem previsão oficial.",
   "validacao_retroativa": "pendente",
@@ -40,10 +40,10 @@
     {
       "uf": "BA",
       "apuracao_pct": 100.0,
-      "votos_restantes_estimados": 253,
+      "votos_restantes_estimados": 0,
       "participacao_13_observada": 71.31,
-      "participacao_13_projetada": 71.08,
-      "intervalos_estaduais_disponiveis": 4
+      "participacao_13_projetada": 71.1,
+      "intervalos_estaduais_disponiveis": 5
     },
     {
       "uf": "CE",
@@ -222,27 +222,10 @@
       "intervalos_estaduais_disponiveis": 4
     }
   ],
-  "simulacoes": 4000,
-  "votos_restantes_estimados": 253,
-  "total_final_13": 64256411,
-  "total_final_22": 59826114,
-  "diferenca_mediana_13_menos_22": 4430297,
-  "faixa_cenarios_13": [
-    64256379,
-    64256446
-  ],
-  "faixa_cenarios_22": [
-    59826091,
-    59826139
-  ],
-  "faixa_cenarios_diferenca": [
-    4430254,
-    4430346
-  ],
-  "frequencia_cenarios_13_pct": 100.0,
-  "frequencia_cenarios_22_pct": 0.0,
-  "frequencia_cenarios_virada_pct": 0.0,
-  "observacao_faixas": "Intervalo central de 95% dos cenários simulados, NÃO intervalo de confiança calibrado.",
-  "consultado_em_utc": "2026-10-26T02:23:01.892054+00:00",
-  "gerado_em_tse": "25/10/2026 23:22:22"
+  "vencedor_observado": "13",
+  "total_final_13": 64256232,
+  "total_final_22": 59826041,
+  "votos_restantes_estimados": 0,
+  "consultado_em_utc": "2026-10-26T03:05:16.689077+00:00",
+  "gerado_em_tse": "25/10/2026 23:27:02"
 }

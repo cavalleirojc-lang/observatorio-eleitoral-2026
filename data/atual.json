@@ -1,6 +1,6 @@
 {
   "status": "parcial_validada",
-  "consultado_em_utc": "2026-10-26T02:23:01.892054+00:00",
+  "consultado_em_utc": "2026-10-26T03:05:16.689077+00:00",
   "fonte": "TSE - EA11/EA20",
   "configuracao_acessivel": true,
   "dados": {
@@ -29,8 +29,8 @@
     "abstencoes": 30509005,
     "brancos": 1430496,
     "nulos": 2723305,
-    "gerado_em_tse": "25/10/2026 23:22:22",
-    "idg": "4247843",
+    "gerado_em_tse": "25/10/2026 23:27:02",
+    "idg": "4241309",
     "por_uf": {
       "AC": {
         "secoes_totalizadas": 2270,
@@ -40,7 +40,7 @@
           "22": 287715,
           "13": 144513
         },
-        "gerado_em_tse": "25/10/2026 23:09:16"
+        "gerado_em_tse": "25/10/2026 23:26:56"
       },
       "AL": {
         "secoes_totalizadas": 7101,
@@ -50,7 +50,7 @@
           "22": 744140,
           "13": 1152621
         },
-        "gerado_em_tse": "25/10/2026 23:22:17"
+        "gerado_em_tse": "25/10/2026 23:26:57"
       },
       "AP": {
         "secoes_totalizadas": 1914,
@@ -60,7 +60,7 @@
           "22": 198674,
           "13": 222968
         },
-        "gerado_em_tse": "25/10/2026 23:09:16"
+        "gerado_em_tse": "25/10/2026 23:26:56"
       },
       "AM": {
         "secoes_totalizadas": 8157,
@@ -70,17 +70,17 @@
           "22": 975245,
           "13": 1145783
         },
-        "gerado_em_tse": "25/10/2026 23:22:17"
+        "gerado_em_tse": "25/10/2026 23:26:57"
       },
       "BA": {
-        "secoes_totalizadas": 35475,
+        "secoes_totalizadas": 35476,
         "secoes_total": 35476,
-        "votos_validos": 9093717,
+        "votos_validos": 9094019,
         "candidatos": {
-          "22": 2608722,
-          "13": 6484995
+          "22": 2608761,
+          "13": 6485258
         },
-        "gerado_em_tse": "25/10/2026 23:09:24"
+        "gerado_em_tse": "25/10/2026 23:27:06"
       },
       "CE": {
         "secoes_totalizadas": 23765,
@@ -90,7 +90,7 @@
           "22": 1819478,
           "13": 4036124
         },
-        "gerado_em_tse": "25/10/2026 23:09:19"
+        "gerado_em_tse": "25/10/2026 23:26:58"
       },
       "DF": {
         "secoes_totalizadas": 6969,
@@ -100,7 +100,7 @@
           "22": 979542,
           "13": 825224
         },
-        "gerado_em_tse": "25/10/2026 23:22:17"
+        "gerado_em_tse": "25/10/2026 23:26:57"
       },
       "ES": {
         "secoes_totalizadas": 9844,
@@ -110,7 +110,7 @@
           "22": 1294504,
           "13": 1001965
         },
-        "gerado_em_tse": "25/10/2026 23:09:18"
+        "gerado_em_tse": "25/10/2026 23:26:57"
       },
       "GO": {
         "secoes_totalizadas": 15686,
@@ -120,7 +120,7 @@
           "22": 2345334,
           "13": 1585555
         },
-        "gerado_em_tse": "25/10/2026 23:09:19"
+        "gerado_em_tse": "25/10/2026 23:26:59"
       },
       "MA": {
         "secoes_totalizadas": 18093,
@@ -130,7 +130,7 @@
           "22": 1229971,
           "13": 2808231
         },
-        "gerado_em_tse": "25/10/2026 23:22:19"
+        "gerado_em_tse": "25/10/2026 23:27:00"
       },
       "MT": {
         "secoes_totalizadas": 8287,
@@ -140,7 +140,7 @@
           "22": 1351099,
           "13": 694167
         },
-        "gerado_em_tse": "25/10/2026 23:09:18"
+        "gerado_em_tse": "25/10/2026 23:26:58"
       },
       "MS": {
         "secoes_totalizadas": 7106,
@@ -150,7 +150,7 @@
           "22": 927892,
           "13": 628973
         },
-        "gerado_em_tse": "25/10/2026 23:22:18"
+        "gerado_em_tse": "25/10/2026 23:26:57"
       },
       "MG": {
         "secoes_totalizadas": 52062,
@@ -160,7 +160,7 @@
           "22": 6241786,
           "13": 6351099
         },
-        "gerado_em_tse": "25/10/2026 23:09:26"
+        "gerado_em_tse": "25/10/2026 23:27:09"
       },
       "PA": {
         "secoes_totalizadas": 20827,
@@ -170,7 +170,7 @@
           "22": 2199940,
           "13": 2690449
         },
-        "gerado_em_tse": "25/10/2026 23:09:20"
+        "gerado_em_tse": "25/10/2026 23:26:59"
       },
       "PB": {
         "secoes_totalizadas": 10712,
@@ -180,7 +180,7 @@
           "22": 865210,
           "13": 1794059
         },
-        "gerado_em_tse": "25/10/2026 23:09:19"
+        "gerado_em_tse": "25/10/2026 23:26:59"
       },
       "PR": {
         "secoes_totalizadas": 27142,
@@ -190,7 +190,7 @@
           "22": 4291444,
           "13": 2566504
         },
-        "gerado_em_tse": "25/10/2026 23:22:23"
+        "gerado_em_tse": "25/10/2026 23:27:02"
       },
       "PE": {
         "secoes_totalizadas": 21418,
@@ -200,7 +200,7 @@
           "22": 1832554,
           "13": 4117513
         },
-        "gerado_em_tse": "25/10/2026 23:09:19"
+        "gerado_em_tse": "25/10/2026 23:26:59"
       },
       "PI": {
         "secoes_totalizadas": 10225,
@@ -210,7 +210,7 @@
           "22": 525859,
           "13": 1653989
         },
-        "gerado_em_tse": "25/10/2026 23:09:18"
+        "gerado_em_tse": "25/10/2026 23:26:59"
       },
       "RJ": {
         "secoes_totalizadas": 37675,
@@ -220,7 +220,7 @@
           "22": 5169033,
           "13": 4565393
         },
-        "gerado_em_tse": "25/10/2026 23:09:18"
+        "gerado_em_tse": "25/10/2026 23:26:58"
       },
       "RN": {
         "secoes_totalizadas": 8115,
@@ -230,7 +230,7 @@
           "22": 737409,
           "13": 1413596
         },
-        "gerado_em_tse": "25/10/2026 23:09:18"
+        "gerado_em_tse": "25/10/2026 23:26:58"
       },
       "RS": {
         "secoes_totalizadas": 27547,
@@ -240,7 +240,7 @@
           "22": 3874378,
           "13": 2824552
         },
-        "gerado_em_tse": "25/10/2026 23:09:27"
+        "gerado_em_tse": "25/10/2026 23:27:07"
       },
       "RO": {
         "secoes_totalizadas": 4698,
@@ -250,7 +250,7 @@
           "22": 674382,
           "13": 294446
         },
-        "gerado_em_tse": "25/10/2026 23:09:17"
+        "gerado_em_tse": "25/10/2026 23:26:57"
       },
       "RR": {
         "secoes_totalizadas": 1519,
@@ -270,7 +270,7 @@
           "22": 3220071,
           "13": 1418314
         },
-        "gerado_em_tse": "25/10/2026 23:09:21"
+        "gerado_em_tse": "25/10/2026 23:27:01"
       },
       "SP": {
         "secoes_totalizadas": 103656,
@@ -280,7 +280,7 @@
           "22": 14139178,
           "13": 12119274
         },
-        "gerado_em_tse": "25/10/2026 23:22:27"
+        "gerado_em_tse": "25/10/2026 23:27:11"
       },
       "SE": {
         "secoes_totalizadas": 5923,
@@ -290,7 +290,7 @@
           "22": 433354,
           "13": 989041
         },
-        "gerado_em_tse": "25/10/2026 23:22:17"
+        "gerado_em_tse": "25/10/2026 23:26:57"
       },
       "TO": {
         "secoes_totalizadas": 4384,
@@ -300,7 +300,7 @@
           "22": 467916,
           "13": 442962
         },
-        "gerado_em_tse": "25/10/2026 23:22:17"
+        "gerado_em_tse": "25/10/2026 23:26:58"
       }
     },
     "ufs_validadas": 27,
@@ -316,12 +316,12 @@
         }
       },
       "Nordeste": {
-        "secoes_totalizadas": 140827,
+        "secoes_totalizadas": 140828,
         "secoes_total": 140828,
-        "votos_validos": 35246866,
+        "votos_validos": 35247168,
         "candidatos": {
-          "13": 24450169,
-          "22": 10796697
+          "13": 24450432,
+          "22": 10796736
         }
       },
       "Centro-Oeste": {
@@ -358,19 +358,19 @@
       "ufs_pendentes": [],
       "erros_uf": {},
       "soma_ufs": {
-        "secoes_totalizadas": 497896,
-        "votos_validos": 123710320,
+        "secoes_totalizadas": 497897,
+        "votos_validos": 123710622,
         "candidatos": {
-          "13": 64055815,
-          "22": 59654505
+          "13": 64056078,
+          "22": 59654544
         }
       },
       "diferenca_nacional_menos_ufs": {
-        "secoes_totalizadas": 1352,
-        "votos_validos": 371953,
+        "secoes_totalizadas": 1351,
+        "votos_validos": 371651,
         "candidatos": {
-          "13": 200417,
-          "22": 171536
+          "13": 200154,
+          "22": 171497
         }
       },
       "comparacao_completa": true,

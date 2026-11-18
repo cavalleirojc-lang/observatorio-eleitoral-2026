@@ -1,8 +1,8 @@
 {
-  "status": "dados_anteriores",
-  "consultado_em_utc": "2026-11-18T14:43:25.671487+00:00",
+  "status": "parcial_validada",
+  "consultado_em_utc": "2026-11-18T15:42:40.646466+00:00",
   "fonte": "TSE - EA11/EA20",
-  "configuracao_acessivel": false,
+  "configuracao_acessivel": true,
   "dados": {
     "eleicao": "6258",
     "turno": 2,
@@ -378,9 +378,8 @@
       "observacao": "Arquivos nacionais e estaduais podem ter horários de geração distintos; diferenças não comprovam erro de totalização."
     }
   },
-  "mensagem": "Não foi possível validar uma nova consulta ao TSE. Mantida última parcial validada; pode estar desatualizada.",
-  "erro_tipo": "URLError",
-  "ultima_consulta_validada_utc": "2026-11-18T13:50:18.374498+00:00",
+  "mensagem": "Resultado nacional oficial disponível (EA20).",
+  "url_resultado": "https://resultados.tse.jus.br/oficial/ele2026/6258/dados/br/br-c0001-e006258-u.json",
   "comparativos": {
     "referencia_2022_segundo_turno": {
       "ano": 2022,
